@@ -14,6 +14,7 @@ mod_landing_ui <- function(id){
              tags$div(id = "header-bar"),
              tags$div(id = "hero-div",
                       tags$div(id = "hero-content",
+                               class = "container",
                                tags$div(class = "row",
                                         tags$div(id = "hero-title", class = "col-sm-6"),
                                         tags$div(id = "hero-headline", class = "col-sm-6")
