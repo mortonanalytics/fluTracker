@@ -10,7 +10,19 @@
 mod_times_series_ui <- function(id){
   ns <- NS(id)
   tagList(
- 
+    tags$div(id="times-series-charts", class="container-md",
+             tags$div(class="section-divider"),
+             tags$div(class="row", style="margin: 0px",
+                      tags$div(class="col-sm-6 chart-container",
+                               myIO::myIOOutput(ns("ts_nat"), width = "90%")
+                        ),
+                      tags$div(class="col-sm-6 chart-container",
+                               myIO::myIOOutput(ns("ts_wv"), width = "90%")
+                        )
+                      ),
+             tags$div(class="section-divider")
+                    )
+             
   )
 }
     
@@ -19,6 +31,57 @@ mod_times_series_ui <- function(id){
 #' @noRd 
 mod_times_series_server <- function(input, output, session){
   ns <- session$ns
+  library(dplyr)
+  
+  output$ts_nat <- myIO::renderMyIO({
+    ili_nat_df <- read.csv('./inst/app/data/national_ILINet.csv', stringsAsFactors = FALSE )%>%
+      filter(YEAR >= 2015) %>%
+      select(YEAR, WEEK, ILITOTAL) %>%
+      mutate(YEAR = as.character(YEAR),
+             WEEK = as.numeric(WEEK),
+             ILITOTAL = as.numeric(ILITOTAL))
+    
+    colorKey <- unlist(unique(ili_nat_df$YEAR))
+    colorScheme <- viridis::viridis(length(colorKey))
+    
+    myIO::myIO() %>%
+      myIO::addIoLayer("line",
+                 label = "ili",
+                 data = ili_nat_df,
+                 color = colorScheme,
+                 mapping = list(
+                   x_var = "WEEK",
+                   y_var = "ILITOTAL",
+                   group = "YEAR"
+                 )) %>%
+      myIO::setAxisFormat(xAxis = ".0f") %>%
+      myIO::setAxisLimits(xlim = list(min = 0.5, max = 54), ylim = list(min = 0))
+  })
+  
+  output$ts_wv <- myIO::renderMyIO({
+    ili_wv_df <- read.csv('./inst/app/data/state_ILINet.csv', stringsAsFactors = FALSE)%>%
+      filter(YEAR >= 2015) %>%
+      select(YEAR, WEEK, ILITOTAL) %>%
+      mutate(YEAR = as.character(YEAR),
+             WEEK = as.numeric(WEEK),
+             ILITOTAL = as.numeric(ILITOTAL))
+    
+    colorKey <- unlist(unique(ili_wv_df$YEAR))
+    colorScheme <- viridis::viridis(length(colorKey))
+    
+    myIO::myIO() %>%
+      myIO::addIoLayer("line",
+                 label = "ili",
+                 data = ili_wv_df,
+                 color = colorScheme,
+                 mapping = list(
+                   x_var = "WEEK",
+                   y_var = "ILITOTAL",
+                   group = "YEAR"
+                 )) %>%
+      myIO::setAxisFormat(xAxis = ".0f") %>%
+      myIO::setAxisLimits(xlim = list(min = 0.5, max = 54), ylim = list(min = 0))
+  })
  
 }
     

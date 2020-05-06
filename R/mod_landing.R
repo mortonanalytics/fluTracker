@@ -14,10 +14,18 @@ mod_landing_ui <- function(id){
              tags$div(id = "header-bar"),
              tags$div(id = "hero-div",
                       tags$div(id = "hero-content",
-                               class = "container",
+                               #class = "container",
                                tags$div(class = "row",
-                                        tags$div(id = "hero-title", class = "col-sm-6"),
-                                        tags$div(id = "hero-headline", class = "col-sm-6")
+                                        tags$div(id = "hero-headline", class = "col-sm-12 col-lg-12",
+                                                 tags$div(id="hero-text-box",
+                                                          tags$p(id="hero-title-text", "West Virginia Flu Tracker"),
+                                                          tags$p(class="hero-subtitle-text", "Using data to guide decision-making"),
+                                                          tags$div(style="margin-left: auto; margin-right:auto; width:50%;",
+                                                            tags$button(class="nav-btn", "Explore Data", onclick="scrollToSection('times-series-charts')")
+                                                          )
+                                                          
+                                                 )
+                                                 )
                                         )
                                ),
                       tags$div(id = "navigation") ## may not be needed

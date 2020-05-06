@@ -10,7 +10,10 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # List the first level UI elements here 
     fluidPage(id = "page-container",
-      mod_landing_ui("landing")
+      mod_landing_ui("landing"),
+      mod_data_summary_ui("data_summary"),
+      mod_times_series_ui("times_series"),
+      tags$head(tags$script(src='www/js/scrollToView.js'))
     )
   )
 }
@@ -36,7 +39,6 @@ golem_add_external_resources <- function(){
       app_title = 'fluTracker'
     )
     # Add here other external resources
-    # for example, you can add shinyalert::useShinyalert() 
   )
 }
 

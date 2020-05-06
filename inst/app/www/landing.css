@@ -1,24 +1,56 @@
 #header-bar{
   min-height: 30px;
-  background-color: steelblue;
+  background-color: rgb(255,255,255);
   width: 100%;
 }
 
 #hero-div{
-
+  background-image: url(img/hero.png);
+  background-repeat: no-repeat;
+  background-size: 2000px 1125px;
+  min-height: 1125px;
 }
 
 #hero-content{
-  
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  width: 35%;
 }
 
 #hero-title{
-  min-height: 200px;
-  border: 5px solid lightsteelblue;
   
 }
 
+#hero-text-box{
+  background-color: rgb(0,0,0,0.3);
+  
+}
+
+#hero-title-text{
+  margin: 15px;
+  font-size: 30px;
+  color: white;
+}
+
+.hero-subtitle-text{
+  margin: 15px 15px 0px 15px;
+  font-size: 20px;
+  color: orange;
+}
+
 #hero-headline{
-  min-height: 200px;
-  border: 5px solid lightsteelblue;
+  color: whitesmoke;
+}
+
+.nav-btn {
+  background-color: rgb(5,33,55);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  width:100%;
 }
