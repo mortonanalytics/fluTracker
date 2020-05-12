@@ -24,6 +24,8 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
+  
+  callModule(mod_landing_server, "landing_ui_1")
 
   callModule(mod_times_series_server, "times_series_ui_1")
 }

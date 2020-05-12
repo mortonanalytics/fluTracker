@@ -9,20 +9,10 @@ libcurl4-gnutls-dev \
 libcairo2-dev/unstable \
 libxt-dev 
 
-RUN echo "options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl')"
-RUN R -e 'install.packages("remotes")'
-RUN R -e 'remotes::install_github("r-lib/remotes", ref = "97bbf81")'
-RUN Rscript -e 'remotes::install_version("config",upgrade="never", version = "0.3")'
-RUN Rscript -e 'remotes::install_version("shiny",upgrade="never", version = "1.4.0.2")'
-RUN Rscript -e 'remotes::install_version("DT",upgrade="never", version = "0.13")'
-RUN Rscript -e 'remotes::install_version("htmltools",upgrade="never", version = "0.4.0")'
-RUN Rscript -e 'remotes::install_version("htmlwidgets",upgrade="never", version = "1.5.1")'
-RUN Rscript -e 'remotes::install_github("mortonanalytics/myIO")'
-RUN Rscript -e 'remotes::install_github("mortonanalytics/myGIO")'
-RUN Rscript -e 'remotes::install_version("dplyr",upgrade="never", version = "0.8.5")'
-RUN Rscript -e 'remotes::install_version("rtweet",upgrade="never", version = "0.7.0")'
-RUN Rscript -e 'remotes::install_version("viridis",upgrade="never", version = "0.5.1")'
-RUN Rscript -e 'remotes::install_version("testthat",upgrade="never", version = "2.3.2")'
+RUN R -e "install.packages(c('shiny', 'shinyWidgets', 'htmltools', 'assertthat', 'yaml', 'devtools' 'htmlwidgets', 'dplyr', 'viridis' ), repos='http://cran.rstudio.com/')"
+
+RUN Rscript -e 'devtools::install_github("mortonanalytics/myIO")'
+RUN Rscript -e 'devtools::install_github("mortonanalytics/myGIO")'
 
 COPY /app /app/
 
