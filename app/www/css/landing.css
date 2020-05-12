@@ -5,7 +5,7 @@
 }
 
 #hero-div{
-  background-image: url(img/hero.png);
+  background-image: url(/images/hero.png);
   background-repeat: no-repeat;
   background-size: 2000px 1125px;
   min-height: 1125px;

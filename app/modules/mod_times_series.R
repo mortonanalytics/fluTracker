@@ -31,13 +31,12 @@ mod_times_series_ui <- function(id){
 #' @noRd 
 mod_times_series_server <- function(input, output, session){
   ns <- session$ns
-  library(dplyr)
   
   output$ts_nat <- myIO::renderMyIO({
-    ili_nat_df <- read.csv('./inst/app/data/national_ILINet.csv', stringsAsFactors = FALSE )%>%
-      filter(YEAR >= 2015) %>%
-      select(YEAR, WEEK, ILITOTAL) %>%
-      mutate(YEAR = as.character(YEAR),
+    ili_nat_df <- read.csv('./data/national_ILINet.csv', stringsAsFactors = FALSE )%>%
+      dplyr::filter(YEAR >= 2015) %>%
+      dplyr::select(YEAR, WEEK, ILITOTAL) %>%
+      dplyr::mutate(YEAR = as.character(YEAR),
              WEEK = as.numeric(WEEK),
              ILITOTAL = as.numeric(ILITOTAL))
     
@@ -59,10 +58,10 @@ mod_times_series_server <- function(input, output, session){
   })
   
   output$ts_wv <- myIO::renderMyIO({
-    ili_wv_df <- read.csv('./inst/app/data/state_ILINet.csv', stringsAsFactors = FALSE)%>%
-      filter(YEAR >= 2015) %>%
-      select(YEAR, WEEK, ILITOTAL) %>%
-      mutate(YEAR = as.character(YEAR),
+    ili_wv_df <- read.csv('./data/state_ILINet.csv', stringsAsFactors = FALSE)%>%
+      dplyr::filter(YEAR >= 2015) %>%
+      dplyr::select(YEAR, WEEK, ILITOTAL) %>%
+      dplyr::mutate(YEAR = as.character(YEAR),
              WEEK = as.numeric(WEEK),
              ILITOTAL = as.numeric(ILITOTAL))
     

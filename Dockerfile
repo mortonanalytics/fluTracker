@@ -18,9 +18,6 @@ RUN Rscript -e 'remotes::install_version("rtweet",upgrade="never", version = "0.
 RUN Rscript -e 'remotes::install_version("viridis",upgrade="never", version = "0.5.1")'
 RUN Rscript -e 'remotes::install_version("htmlwidgets",upgrade="never", version = "1.5.1")'
 RUN Rscript -e 'remotes::install_version("testthat",upgrade="never", version = "2.3.2")'
-RUN mkdir /build_zone
-ADD . /build_zone
-WORKDIR /build_zone
-RUN R -e 'remotes::install_local(upgrade="never")'
+
 EXPOSE 80
-CMD R -e "options('shiny.port'=80,shiny.host='0.0.0.0');fluTracker::run_app()"
+CMD R -e "options('shiny.port'=80,shiny.host='0.0.0.0'); shiny::runApp('app')"
