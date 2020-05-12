@@ -7,7 +7,7 @@ lapply(list.files('./modules'), function(mod){
 })
 
 # Define UI for application that draws a histogram
-ui <- fluidPage(
+ui <- fluidPage(style="padding:0px",
   tagList(
     tags$head(tags$link(href="css/landing.css", rel="stylesheet")),
     tags$head(tags$link(href="css/main.css", rel="stylesheet")),
