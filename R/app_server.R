@@ -6,6 +6,6 @@
 #' @noRd
 app_server <- function( input, output, session ) {
   # List the first level callModules here
-  callModule(mod_times_series_server, "times_series")
+  #callModule(mod_times_series_server, "times_series")
 
 }
