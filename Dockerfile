@@ -9,7 +9,7 @@ libcurl4-gnutls-dev \
 libcairo2-dev/unstable \
 libxt-dev 
 
-RUN echo "options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl')" >> /usr/local/lib/R/etc/Rprofile.site
+RUN echo "options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl')"
 RUN R -e 'install.packages("remotes")'
 RUN R -e 'remotes::install_github("r-lib/remotes", ref = "97bbf81")'
 RUN Rscript -e 'remotes::install_version("config",upgrade="never", version = "0.3")'
