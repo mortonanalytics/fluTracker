@@ -18,7 +18,7 @@
 #usethis::use_package( "thinkr" )
 usethis::use_package( "myIO" )
 usethis::use_package( "myGIO" )
-usethis::use_package( "dplyr" )
+usethis::use_package( "rtweet" )
 
 ## Add modules ----
 ## Create a module infrastructure in R/
