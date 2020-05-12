@@ -11,8 +11,8 @@ app_ui <- function(request) {
     # List the first level UI elements here 
     fluidPage(id = "page-container",
       mod_landing_ui("landing"),
-      #mod_data_summary_ui("data_summary"),
-      #mod_times_series_ui("times_series"),
+      mod_data_summary_ui("data_summary"),
+      mod_times_series_ui("times_series"),
       tags$head(tags$script(src='www/js/scrollToView.js'))
     )
   )

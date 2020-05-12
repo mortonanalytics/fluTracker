@@ -7,6 +7,10 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis build
+status](https://travis-ci.com/mortonanalytics/fluTracker.svg?branch=master)](https://travis-ci.com/mortonanalytics/fluTracker)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/mortonanalytics/fluTracker?branch=master&svg=true)](https://ci.appveyor.com/project/mortonanalytics/fluTracker)
 <!-- badges: end -->
 
 The goal of fluTracker is to …
