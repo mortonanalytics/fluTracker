@@ -15,6 +15,8 @@ RUN Rscript -e 'remotes::install_github("mortonanalytics/myIO")'
 RUN Rscript -e 'remotes::install_github("mortonanalytics/myGIO")'
 RUN Rscript -e 'remotes::install_version("dplyr",upgrade="never", version = "0.8.5")'
 RUN Rscript -e 'remotes::install_version("rtweet",upgrade="never", version = "0.7.0")'
+RUN Rscript -e 'remotes::install_version("viridis",upgrade="never", version = "0.5.1")'
+RUN Rscript -e 'remotes::install_version("htmlwidgets",upgrade="never", version = "1.5.1")'
 RUN Rscript -e 'remotes::install_version("testthat",upgrade="never", version = "2.3.2")'
 RUN mkdir /build_zone
 ADD . /build_zone
