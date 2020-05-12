@@ -19,7 +19,7 @@ RUN Rscript -e 'remotes::install_version("viridis",upgrade="never", version = "0
 RUN Rscript -e 'remotes::install_version("htmlwidgets",upgrade="never", version = "1.5.1")'
 RUN Rscript -e 'remotes::install_version("testthat",upgrade="never", version = "2.3.2")'
 
-COPY /app /app
+COPY /app /app/
 
 EXPOSE 80
 CMD R -e "options('shiny.port'=80,shiny.host='0.0.0.0'); shiny::runApp('app')"
