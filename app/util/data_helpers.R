@@ -18,7 +18,8 @@ get_essence_data <- function(start_date, end_date){
   
   results <- fromJSON(
     content(
-      httr::GET(paste0("https://essence.syndromicsurveillance.org/nssp_essence/", query_text, collapse = ""), timeout(20), authenticate(Sys.getenv("user"), Sys.getenv("password"))), "text"
+      httr::GET(paste0("https://essence.syndromicsurveillance.org/nssp_essence/", query_text, collapse = ""), timeout(20), authenticate(Sys.getenv("user"), Sys.getenv("password")))
+      , "text"
     )
   )
 
