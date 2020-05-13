@@ -35,7 +35,7 @@ mod_dashboard_ui <- function(id){
              tags$div(class='row',
                       tags$div(class='col-sm-8', #style="background-color: white;",
                                #myGIOOutput(ns("county_map"), height = "650px")
-                               verbatimTextOutput(ns("env_check"))
+                               #verbatimTextOutput(ns("env_check"))
                                )
                       )
               )
