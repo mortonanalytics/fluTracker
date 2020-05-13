@@ -6,6 +6,8 @@ library(dplyr)
 library(myIO)
 library(myGIO)
 
+readRenviron(".Renviron")
+
 lapply(list.files('./util'), function(mod){
   print(mod)
   source(paste0("./util/", mod))

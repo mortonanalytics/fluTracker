@@ -33,8 +33,9 @@ mod_dashboard_ui <- function(id){
                         ),
                       ),
              tags$div(class='row',
-                      tags$div(class='col-sm-8', style="background-color: white;",
-                               myGIOOutput(ns("county_map"), height = "650px")
+                      tags$div(class='col-sm-8', #style="background-color: white;",
+                               #myGIOOutput(ns("county_map"), height = "650px")
+                               verbatimTextOutput(ns("env_check"))
                                )
                       )
               )
@@ -69,6 +70,10 @@ mod_dashboard_server <- function(input, output, session){
   
   map_values <- reactive({
     process_map_data( essence_data() )
+  })
+  
+  output$env_check <- renderPrint({
+    Sys.getenv("user")
   })
   
   #### value box HTML ####
