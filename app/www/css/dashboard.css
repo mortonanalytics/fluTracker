@@ -1,0 +1,31 @@
+.value-card {
+  background-color: transparent;
+  border: 2px solid white;
+  max-height: 120px;
+  margin-bottom: 5px;
+}
+
+.value-card-header{
+ min-height: 40px;
+ margin-top:5px;
+}
+
+.value-card-header-text{
+ font-size: 16px;
+ text-align: center;
+ color: white;
+}
+
+.value-card-value{
+  min-height: 80px;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+.value-card-value-text{
+ font-size: 32px;
+ text-align: center;
+ color: white;
+ margin-top:auto;
+ margin-bottom:auto;
+}

@@ -21,14 +21,13 @@ mod_landing_ui <- function(id){
                                                           tags$p(id="hero-title-text", "West Virginia Flu Tracker"),
                                                           tags$p(class="hero-subtitle-text", "Using data to guide decision-making"),
                                                           tags$div(style="margin-left: auto; margin-right:auto; width:50%;",
-                                                            tags$button(class="nav-btn", "Explore Data", onclick="scrollToSection('times-series-charts')")
+                                                            tags$button(class="nav-btn", "Explore Data", onclick="scrollToSection('dashboard-charts')")
                                                           )
                                                           
                                                  )
                                                  )
                                         )
-                               ),
-                      tags$div(id = "navigation") ## may not be needed
+                               )
                       )
              )
   )

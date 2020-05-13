@@ -19,8 +19,7 @@ mod_times_series_ui <- function(id){
                       tags$div(class="col-sm-6 chart-container",
                                myIO::myIOOutput(ns("ts_wv"), width = "90%")
                         )
-                      ),
-             tags$div(class="section-divider")
+                      )
                     )
              
   )
