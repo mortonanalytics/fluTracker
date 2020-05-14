@@ -62,7 +62,7 @@ mod_dashboard_ui <- function(id){
                                             ),
                                            selected = "AgeGroup"
                                            ),
-                               myIOOutput(ns("vital_stats"), height = "250px" ),
+                               myIOOutput(ns("vital_stats"), height = "300px" ),
                                h3("Legislative Tracker"),
                                DT::dataTableOutput(ns("legislation_tracker"), height = "250px" )
                                )
@@ -242,7 +242,7 @@ mod_dashboard_server <- function(input, output, session){
       #myIO::flipAxis()%>%
       myIO::defineCategoricalAxis() %>%
       myIO::setAxisLimits( ylim = list(min = 0)) %>%
-      myIO::setmargin(bottom = 75, right= 75) %>%
+      myIO::setmargin(bottom = 100, right= 75) %>%
       myIO::suppressLegend()
   })
   
