@@ -10,17 +10,33 @@
 mod_times_series_ui <- function(id){
   ns <- NS(id)
   tagList(
-    tags$div(id="times-series-charts", class="container-md",
+    tags$div(id="times-series-charts", class="container-md", style="background-color: rgb(255,255,255,0.2",
              tags$div(class="section-divider"),
-             tags$div(class="row", style="margin: 0px",
+             tags$div(class='row', style="margin: 0px 10px 0px 10px;",
+                      h2("Historic Trends", style="color:whitesmoke; margin: 0px 10px 0px 10px;")
+             ),
+             tags$div(class="row", style="margin: 0px 10px 0px 10px;",
+                      
                       tags$div(class="col-sm-6 chart-container",
-                               myIO::myIOOutput(ns("ts_nat"), width = "90%")
+                               tabsetPanel(
+                                 tabPanel(title = "National Trends",
+                                          br(),
+                                          myIO::myIOOutput(ns("ts_nat"))
+                                          ),
+                                 tabPanel(title = "West Virginia Trends",
+                                          br(),
+                                          myIO::myIOOutput(ns("ts_wv"))
+                                          )
+                               )
+                               
                         ),
-                      tags$div(class="col-sm-6 chart-container",
-                               myIO::myIOOutput(ns("ts_wv"), width = "90%")
+                      tags$div(class="col-sm-6 "
+                               
                         )
                       )
-                    )
+                    ),
+    tags$div(class="section-divider"),
+    tags$div(class="section-divider")
              
   )
 }

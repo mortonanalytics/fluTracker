@@ -24,6 +24,7 @@
 
 #hero-text-box{
   background-color: rgb(0,0,0,0.3);
+  height: 200px;
   
 }
 
@@ -52,5 +53,9 @@
   text-decoration: none;
   display: inline-block;
   font-size: 32px;
-  width:100%;
+  width:300px;
+  height: 70px;
+  border-radius: 15px;
+  margin-left: -50%;
+  margin-right: auto;
 }

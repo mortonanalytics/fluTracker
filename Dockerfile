@@ -9,9 +9,10 @@ libcurl4-gnutls-dev \
 libcairo2-dev/unstable \
 libxt-dev 
 
-RUN R -e "install.packages(c('shiny', 'shinyWidgets', 'htmltools', 'assertthat', 'yaml', 'devtools', 'htmlwidgets', 'dplyr', 'viridis' ), repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages( c('shiny', 'shinyWidgets', 'htmltools', 'assertthat', 'yaml', 'devtools', 'htmlwidgets', 'dplyr', 'viridis' ), repos='http://cran.rstudio.com/')"
 
-RUN R -e "install.packages(c('httr', 'glue', 'jsonlite') )"
+RUN R -e "install.packages( c('httr', 'glue', 'jsonlite') )"
+RUN R -e "install.packages( c('DT') )"
 
 RUN Rscript -e 'devtools::install_github("mortonanalytics/myIO")'
 RUN Rscript -e 'devtools::install_github("mortonanalytics/myGIO")'

@@ -2,7 +2,7 @@ get_essence_data <- function(start_date, end_date){
   
   #start_date <- "11May2020"
   
-  #end_date <- "12May2020"
+  #end_date <- "14May2020"
   
   date_string <- glue("startDate={start_date}&endDate={end_date}")
   
@@ -18,7 +18,7 @@ get_essence_data <- function(start_date, end_date){
   
   results <- fromJSON(
     content(
-      httr::GET(paste0("https://essence.syndromicsurveillance.org/nssp_essence/", query_text, collapse = ""), timeout(20), authenticate(Sys.getenv("user"), Sys.getenv("password")))
+      httr::GET(paste0("https://essence.syndromicsurveillance.org/nssp_essence/", query_text, collapse = ""), timeout(20), authenticate( Sys.getenv("user"), Sys.getenv("password") ))
       , "text"
     )
   )
@@ -69,9 +69,26 @@ process_map_data <- function(df){
   
   final <- df %>%
     group_by(Region) %>%
-    summarise(total_ili = n()) %>%
+    summarise(
+      'ILI Cases' = n(),
+      'ILI Deaths' = length(C_Death[C_Death == "Yes"])
+              ) %>%
     ungroup() %>%
     left_join(df_geoid, by=c("Region" = "county"))
+  
+  return(final)
+}
+
+process_summary_data <- function(df, category){
+  
+  grouper <- sym(category)
+  
+  final <- df %>%
+    group_by( !!grouper ) %>%
+    summarise(
+      'ILI Cases' = n()
+    ) %>%
+    ungroup() 
   
   return(final)
 }

@@ -1,3 +1,7 @@
+.dashboard-section-divider{
+  height: 20px;
+}
+
 .value-card {
   background-color: transparent;
   border: 2px solid white;
@@ -28,4 +32,8 @@
  color: white;
  margin-top:auto;
  margin-bottom:auto;
+}
+
+.legend .axis{
+  color: white;
 }

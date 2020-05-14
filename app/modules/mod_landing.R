@@ -20,7 +20,7 @@ mod_landing_ui <- function(id){
                                                  tags$div(id="hero-text-box",
                                                           tags$p(id="hero-title-text", "West Virginia Flu Tracker"),
                                                           tags$p(class="hero-subtitle-text", "Using data to guide decision-making"),
-                                                          tags$div(style="margin-left: auto; margin-right:auto; width:50%;",
+                                                          tags$div(style="position:absolute; bottom: -25px; left: 50%;",
                                                             tags$button(class="nav-btn", "Explore Data", onclick="scrollToSection('dashboard-charts')")
                                                           )
                                                           
