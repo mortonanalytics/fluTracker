@@ -240,7 +240,7 @@ mod_dashboard_server <- function(input, output, session){
                        )) %>%
       myIO::setAxisFormat(yAxis = ",.0f" ) %>%
       #myIO::flipAxis()%>%
-      myIO::defineCategoricalAxis(xAxis = TRUE, yAxis = FALSE) %>%
+      myIO::defineCategoricalAxis() %>%
       myIO::setAxisLimits( ylim = list(min = 0)) %>%
       myIO::setmargin(bottom = 75, right= 75) %>%
       myIO::suppressLegend()
