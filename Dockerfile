@@ -16,7 +16,7 @@ RUN R -e "install.packages( c('DT') )"
 
 RUN Rscript -e 'devtools::install_github("mortonanalytics/myIO", ref="v1.0")'
 
-RUN Rscript -e 'devtools::install_github("mortonanalytics/myGIO", ref="master")'
+RUN Rscript -e 'devtools::install_github("mortonanalytics/myGIO")'
 
 COPY /app /app/
 
