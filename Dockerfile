@@ -11,8 +11,9 @@ libxt-dev
 
 RUN R -e "install.packages( c('shiny', 'shinyWidgets', 'htmltools', 'assertthat', 'yaml', 'devtools', 'htmlwidgets', 'dplyr', 'viridis' ), repos='http://cran.rstudio.com/')"
 
-RUN R -e "install.packages( c('httr', 'glue', 'jsonlite') )"
+RUN R -e "install.packages( c('httr', 'glue') )"
 RUN R -e "install.packages( c('DT') )"
+RUN R -e "install.packages( c('jsonlite') )"
 
 RUN Rscript -e 'devtools::install_github("mortonanalytics/myIO", ref="v1.0")'
 
