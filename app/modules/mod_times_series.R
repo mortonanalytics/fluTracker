@@ -13,19 +13,20 @@ mod_times_series_ui <- function(id){
     tags$div(id="times-series-charts", class="container-md", style="background-color: rgb(255,255,255,0.2",
              tags$div(class="section-divider"),
              tags$div(class='row', style="margin: 0px 10px 0px 10px;",
-                      h2("Historic Trends", style="color:whitesmoke; margin: 0px 10px 0px 10px;")
+                      tags$div(class='col-sm-12',
+                               h1("Historical Trends and West Virginia Legistlative History", 
+                                  style="color: white; text-align:center;")
+                      )
              ),
              tags$div(class="row", style="margin: 0px 10px 0px 10px;",
                       
                       tags$div(class="col-sm-6 chart-container",
                                tabsetPanel(type = "pills",
                                  tabPanel(title = "National Trends",
-                                          br(),
-                                          myIO::myIOOutput(ns("ts_nat"))
+                                          box(myIO::myIOOutput(ns("ts_nat")), width = "100%")
                                           ),
                                  tabPanel(title = "West Virginia Trends",
-                                          br(),
-                                          myIO::myIOOutput(ns("ts_wv"))
+                                          box(myIO::myIOOutput(ns("ts_wv")), width = "100%")
                                           )
                                )
                                
@@ -95,6 +96,28 @@ mod_times_series_server <- function(input, output, session){
                  )) %>%
       myIO::setAxisFormat(xAxis = ".0f") %>%
       myIO::setAxisLimits(xlim = list(min = 0.5, max = 54), ylim = list(min = 0))
+  })
+  
+  #### legislation tracker ####
+  output$legislation_tracker <- DT::renderDataTable({
+    df <- read.csv('./data/wv_leg_tracker.csv', stringsAsFactors = FALSE )
+    
+    DT::datatable(
+      df, 
+      escape = FALSE, 
+      rownames = FALSE,
+      options = list(
+        scrollX = TRUE,
+        scrolly = TRUE,
+        pageLength = 3,
+        dom = 'ftp',
+        initComplete = JS(
+          "function(settings, json) {",
+          "$(this.api().table().header()).css({'color': '#fff'});",
+          "$(this.api().table().footer()).css({'color': '#fff'});",
+          "}")
+      )
+    )
   })
  
 }

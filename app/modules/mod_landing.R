@@ -18,8 +18,10 @@ mod_landing_ui <- function(id){
                                tags$div(class = "row",
                                         tags$div(id = "hero-headline", class = "col-sm-12 col-lg-12",
                                                  tags$div(id="hero-text-box",
-                                                          tags$p(id="hero-title-text", "West Virginia Flu Tracker"),
-                                                          tags$p(class="hero-subtitle-text", "Using data to guide decision-making"),
+                                                          tags$p(id="hero-title-text", "West Virginia Influenza Tracking and Prediction"),
+                                                          tags$p(class="hero-subtitle-text", "A tool for tracking and predicting Influenza in West Virginia"),
+                                                          br(),
+                                                          tags$p(class="hero-subtitle-text2", "Provided by Extra-Corporeal Membrane Oxygenation Program of the West Virginia University Heart and Vascular Institute"),
                                                           tags$div(style="position:absolute; bottom: -25px; left: 50%;",
                                                             tags$button(class="nav-btn", "Explore Data", onclick="scrollToSection('dashboard-charts')")
                                                           )
