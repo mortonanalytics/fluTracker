@@ -129,7 +129,7 @@ mod_dashboard_ui <- function(id){
                               box(width = "100%",  solidHeader = TRUE,
                                   title="About the Data",
                                   h4("From the CDC:"),
-                                  p("ESSENCE, developed by Johns Hopkins University (JHU), is the platform’s primary syndromic surveillance tool, and practitioners across the surveillance community have used variations of ESSENCE successfully for years. "),
+                                  p("ESSENCE, developed by Johns Hopkins University (JHU), is the platform's primary syndromic surveillance tool, and practitioners across the surveillance community have used variations of ESSENCE successfully for years. "),
                                   br(),
                                   p("The platform was developed through an active collaboration of CDC and other federal agencies, state and local health departments, and public health partners. The platform hosts an array of user-selected tools and has features that are continually being enhanced to reflect their needs.")
                                   ),

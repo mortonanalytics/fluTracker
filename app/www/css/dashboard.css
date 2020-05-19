@@ -62,5 +62,7 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  
+  .nav-btn2 {
+    display:none;
+  }
 }

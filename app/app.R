@@ -21,14 +21,19 @@ lapply(list.files('./modules'), function(mod){
 # Define UI for application that draws a histogram
 ui <- fluidPage(style="padding:0px",
   tagList(
+    #tags$head(HTML('<link rel="stylesheet" href="https://wvumedicine.org/heart/wp-content/themes/wvu-medicine-2015/css/font-awesome.min.css?ver=5.4.1">')),
     tags$head(tags$link(href="css/landing.css", rel="stylesheet")),
     tags$head(tags$link(href="css/main.css", rel="stylesheet")),
     tags$head(tags$link(href="css/dashboard.css", rel="stylesheet")),
     tags$head(tags$link(href="css/ts.css", rel="stylesheet")),
+    #tags$head(tags$link(href="css/fontawesome.css", rel="stylesheet")),
+    tags$head(tags$link(href="css/footer.css", rel="stylesheet")),
     tags$div(id="page-container",
       mod_landing_ui("landing_ui_1"),
       mod_dashboard_ui("dashboard"),
-      mod_times_series_ui("times_series_ui_1")
+      mod_times_series_ui("times_series_ui_1"),
+      mod_about_ui("about_ui"),
+      mod_footer_ui("footer_ui")
     ),
     tags$body(tags$script(src="js/scrollToView.js"))
   )

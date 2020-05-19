@@ -10,7 +10,7 @@
 mod_times_series_ui <- function(id){
   ns <- NS(id)
   tagList(
-    tags$div(id="times-series-charts", class="container-md", style="background-color: rgb(255,255,255,0.2",
+    tags$div(id="times-series-charts", class="container-md", style="background-color: rgb(255,255,255,0.3);",
              tags$div(class="section-divider"),
              tags$div(class='row', style="margin: 0px 10px 0px 10px;",
                       tags$div(class='col-sm-12',
@@ -21,23 +21,59 @@ mod_times_series_ui <- function(id){
              tags$div(class="row", style="margin: 0px 10px 0px 10px;",
                       
                       tags$div(class="col-sm-6 chart-container",
+                               
                                tabsetPanel(type = "pills",
                                  tabPanel(title = "National Trends",
-                                          box(myIO::myIOOutput(ns("ts_nat")), width = "100%")
+                                          box(myIO::myIOOutput(ns("ts_nat"), height = "450px"), width = "100%")
                                           ),
                                  tabPanel(title = "West Virginia Trends",
                                           box(myIO::myIOOutput(ns("ts_wv")), width = "100%")
                                           )
+                               ),
+                               tags$div(class="info-card", style="min-height: 275px",
+                                        tags$div(class="row", style='background-color: #82A9D0; margin: 0px 0px 0px 0px;',
+                                                 h3("Historical Trends",
+                                                    style="text-align:center;"
+                                                 )
+                                        ),
+                                        tags$div(class='row', style="margin: 0px 10px 0px 10px;",
+                                                 tags$ul(style="font-size: 20px;",
+                                                         tags$li("Information on patient visits to health care providers for influenza-like illness is collected through the U.S. Outpatient Influenza-like Illness Surveillance Network (ILINet)."),
+                                                         tags$li("This collaborative effort between CDC, state and local health departments, and health care providers started during the 1997-98 influenza season when approximately 250 providers were enrolled."),
+                                                         tags$li("Enrollment in the system has increased over time and there were >3,000 providers enrolled during the 2010-11 season.") 
+                                                 )
+                                        )
                                )
                                
                         ),
-                      tags$div(class="col-sm-6 "
+                      tags$div(class="col-sm-6 ",
+                               tabsetPanel(type = "pills",
+                                 tabPanel(
+                                   title = "West Virginia Legislation",
+                                   DT::dataTableOutput(ns("legislation_tracker"), height = "450px")
+                                   )
+                               ),
+                               tags$div(class="info-card", style="min-height: 275px",
+                                        tags$div(class="row", style='background-color: #FF9E01; margin: 0px 0px 0px 00px;',
+                                                 h3("Legislative History",
+                                                    style="text-align:center;"
+                                                 )
+                                        ),
+                                        tags$div(class='row',style="margin: 0px 10px 0px 10px;",
+                                                 tags$ul(style="font-size: 20px;",
+                                                         tags$li("The West Virginia Legislature convenes annually for sixty (60) days."),
+                                                         tags$li("The list of bills below represent both proposed and passed legislation relating to influenza."),
+                                                         tags$li("Follow the links to read the text of the bill.") 
+                                                 )
+                                        )
+                               ),
                                
-                        )
+                        ),
+                      tags$div(style="margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px",
+                               tags$button(class="nav-btn3", "Next Page", onclick="scrollToSection('about-section')")
                       )
-                    ),
-    tags$div(class="section-divider"),
-    tags$div(class="section-divider")
+                      )
+                    )
              
   )
 }
@@ -109,7 +145,7 @@ mod_times_series_server <- function(input, output, session){
       options = list(
         scrollX = TRUE,
         scrolly = TRUE,
-        pageLength = 3,
+        pageLength = 5,
         dom = 'ftp',
         initComplete = JS(
           "function(settings, json) {",
