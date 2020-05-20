@@ -94,6 +94,7 @@ mod_times_series_server <- function(input, output, session){
     
     colorKey <- unlist(unique(ili_nat_df$YEAR))
     colorScheme <- viridis::viridis(length(colorKey))
+    colorScheme <- substr(colorScheme, 1, 7)
     
     myIO::myIO() %>%
       myIO::addIoLayer("line",
@@ -119,6 +120,7 @@ mod_times_series_server <- function(input, output, session){
     
     colorKey <- unlist(unique(ili_wv_df$YEAR))
     colorScheme <- viridis::viridis(length(colorKey))
+    colorScheme <- substr(colorScheme, 1, 7)
     
     myIO::myIO() %>%
       myIO::addIoLayer("line",
