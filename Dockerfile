@@ -18,7 +18,7 @@ RUN R -e "install.packages( c('shinydashboard') )"
 
 RUN Rscript -e 'devtools::install_github("mortonanalytics/myIO", ref="v1.0")'
 
-RUN Rscript -e 'devtools::install_github("mortonanalytics/myGIO")'
+RUN Rscript -e 'devtools::install_github("mortonanalytics/myGIO", ref="master")'
 
 COPY /app /app/
 
