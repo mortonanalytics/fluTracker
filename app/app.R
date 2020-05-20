@@ -23,6 +23,7 @@ ui <- fluidPage(
   title = "WV ILI Tracker",
   style="padding:0px",
   tagList(
+    tags$head(tags$link(rel = "shortcut icon", href = "favicon.ico")),
     #tags$head(HTML('<link rel="stylesheet" href="https://wvumedicine.org/heart/wp-content/themes/wvu-medicine-2015/css/font-awesome.min.css?ver=5.4.1">')),
     tags$head(tags$link(href="css/landing.css", rel="stylesheet")),
     tags$head(tags$link(href="css/main.css", rel="stylesheet")),
