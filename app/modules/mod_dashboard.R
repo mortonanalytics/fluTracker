@@ -14,7 +14,7 @@ mod_dashboard_ui <- function(id){
              tags$div(class="dashboard-section-divider"),
              tags$div(class='row', style="margin: 0px 10px 0px 10px;",
                       tags$div(class='col-sm-12',
-                               h1("West Virginia Tracker for Influenza Like Illnesss (ILI)", 
+                               h1("West Virginia Tracker for Influenza Like Illness (ILI)", 
                                   style="color: white; text-align:center; font-family: 'Roboto Slab', serif;")
                                )
                       ),
