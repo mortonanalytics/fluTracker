@@ -38,7 +38,7 @@ mod_times_series_ui <- function(id){
                                         ),
                                         tags$div(class='row', style="margin: 0px 10px 0px 10px;",
                                                  tags$ul(style="font-size: 20px;",
-                                                         tags$li("Information on patient visits to health care providers for influenza-like illness is collected through the U.S. Outpatient Influenza-like Illness Surveillance Network (ILINet)."),
+                                                         tags$li("Information on patient visits to health care providers for influenza like illness (ILI) is collected through the U.S. Outpatient influenza like illness (ILI) Surveillance Network (ILINet)."),
                                                          tags$li("This collaborative effort between CDC, state and local health departments, and health care providers started during the 1997-98 influenza season when approximately 250 providers were enrolled."),
                                                          tags$li("Enrollment in the system has increased over time and there were >3,000 providers enrolled during the 2010-11 season.") 
                                                  )

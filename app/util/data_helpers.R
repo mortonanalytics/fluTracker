@@ -1,8 +1,8 @@
 get_essence_data <- function(start_date, end_date){
   
-  #start_date <- "11May2020"
+  #start_date <- "01Oct2019"
   
-  #end_date <- "14May2020"
+  #end_date <- "19May2020"
   
   date_string <- glue("startDate={start_date}&endDate={end_date}")
   
@@ -13,7 +13,7 @@ get_essence_data <- function(start_date, end_date){
                        "&medicalGroupingSystem=essencesyndromes&medicalGrouping=ili",
                        "&field=Date&field=Region&field=Category_flat&field=C_Patient_County&field=Sex",
                        "&field=Age&field=AdmissionTypeCategory&field=Insurance_Coverage&field=FacilityType",
-                       "&field=WeekYear&field=DeathDateTime&field=C_Death&field=AgeGroup",
+                       "&field=WeekYear&field=DeathDateTime&field=C_Death&field=AgeGroup&field=C_BioSense_ID",
                        collapse = "")
   
   results <- fromJSON(
@@ -28,6 +28,56 @@ get_essence_data <- function(start_date, end_date){
   df_ili <- df[grepl("*ILI*", df$Category_flat), ]
 
   return(df_ili)
+}
+
+update_cached_data <- function(start_date, end_date){
+  
+  cached_data <- read.table('./data/essence.txt', sep = "|", stringsAsFactors = FALSE, header = T) %>%
+    filter(as.Date(Date, "%m/%d/%Y") <= Sys.Date() )
+  
+  cached_data_min_date <- format(min(as.Date(cached_data$Date,"%m/%d/%Y")), "%d%b%Y")
+  cached_data_max_date <- format(max(as.Date(cached_data$Date,"%m/%d/%Y")), "%d%b%Y")
+  
+  #### check if new data is needed ####
+  min_diff <- cached_data_min_date > start_date
+  max_diff <- cached_data_max_date < end_date
+  
+  if(min_diff | max_diff){
+    
+    #### update cached data ####
+    tryCatch({
+      
+      df <- get_essence_data(start_date, end_date)
+      
+      ids <- unique(df$C_BioSense_ID)
+      cached_ids <- unique(cached_data$C_BioSense_ID)
+      ids <- ids[ !ids %in% cached_ids ]
+      new_rows <- df[ df$C_BioSense_ID %in% ids,  ]
+      
+      if(nrow(new_rows) > 0) {
+        
+        final <- rbind(cached_data, new_rows)
+      
+        write.table(final, './data/essence.txt', sep = "|", row.names = FALSE)
+        
+        } else {
+        return(NA)
+      }
+      
+    },
+    error=function(cond) {
+      message("Here's the original error message:")
+      message(cond)
+      # Choose a return value in case of error
+      return(NA)
+    }, finally = {
+      message("finally")
+      
+      return(NA)
+    })
+    
+  }
+  
 }
 
 process_value_box_data <- function(df){

@@ -56,7 +56,7 @@ mod_dashboard_ui <- function(id){
                                              )
                                  ),
                                  tags$div(class='row',style="margin: 0px 10px 0px 10px;",
-                                          p("The data here is intended to track ILI illness in West Virginia by county to find and predict influenza outbreaks",
+                                          p("The data here is intended to track influenza like illness in West Virginia by county to find and predict influenza like illness outbreaks",
                                             style="font-size: 20px"
                                             )
                                  )
@@ -161,10 +161,42 @@ mod_dashboard_server <- function(input, output, session){
     format(as.Date(input$essence_dates[2]), "%d%b%Y")
   })
   
+  #### update cached data as needed ####
+  last_date <- reactive({
+    req(end_date())
+    
+    cached_data <- read.table('./data/essence.txt', sep = "|", stringsAsFactors = FALSE, header = T) %>%
+      filter(as.Date(Date, "%m/%d/%Y") <= Sys.Date() )
+    cached_data_max_date <- format(max(as.Date(cached_data$Date,"%m/%d/%Y")), "%d%b%Y")
+    max_diff <- cached_data_max_date < end_date()
+    
+    return(max_diff)
+    
+  })
+  
+  observeEvent(last_date() == TRUE,{
+    
+    cached_data <- read.table('./data/essence.txt', sep = "|", stringsAsFactors = FALSE, header = T) %>%
+      filter(as.Date(Date, "%m/%d/%Y") <= Sys.Date() )
+    
+    cached_data_max_date <- format(max(as.Date(cached_data$Date,"%m/%d/%Y")), "%d%b%Y")
+    
+    update_cached_data(cached_data_max_date, end_date())
+  
+  })
+  
   #### ESSENCE data read in and summarize ####
   essence_data <- reactive({
-    req(input$essence_dates)
-    get_essence_data(start_date = start_date(), end_date = end_date())
+    req(end_date())
+    
+    cached_data <- read.table('./data/essence.txt', sep = "|", stringsAsFactors = FALSE, header = T) %>%
+      filter(as.Date(Date, "%m/%d/%Y") <= Sys.Date() )
+    
+    final <- cached_data %>%
+        filter( as.Date(Date, "%m/%d/%Y") >= as.Date(start_date(), "%d%b%Y") )
+      
+    return(final)
+    
   })
   
   value_box_values <- reactive({

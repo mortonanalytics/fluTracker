@@ -10,7 +10,7 @@
 mod_footer_ui <- function(id){
   ns <- NS(id)
   tagList(
-    tags$div(id = "footer", class="container-md", style="min-height: 50px; background-color: rgb(255,255,255,0.3);",
+    tags$div(id = "footer", class="container-md", style="min-height: 150px;",
              # includeHTML(
              #   "./www/html/footer.html"
              # )
