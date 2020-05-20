@@ -20,7 +20,7 @@ mod_times_series_ui <- function(id){
              ),
              tags$div(class="row", style="margin: 0px 10px 0px 10px;",
                       
-                      tags$div(class="col-sm-6 chart-container", style="fill: whitesmoke;",
+                      tags$div(class="col-sm-6 chart-container", 
                                
                                tabsetPanel(type = "pills",
                                  tabPanel(title = "National Trends",
