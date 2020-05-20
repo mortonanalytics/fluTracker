@@ -6,6 +6,23 @@
 .section-divider{
   height: 10px;
 }
+
+.x-label {
+  fill:whitesmoke;
+}
+
+.y-label {
+  fill:whitesmoke;
+}
+
+.legendElement, .legend-label {
+	font-family:Roboto, sans-serif;
+	color: whitesmoke;
+}
+
+.x-grid, .y-grid{
+  stroke: whitesmoke;
+}
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px)  {
 .nav-btn3 {
     background-color: rgb(244,173,44);

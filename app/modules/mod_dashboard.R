@@ -97,7 +97,7 @@ mod_dashboard_ui <- function(id){
              
              #### dash exhibits ####
              tags$div(id="dashboard-stats-div", class='row', style="margin: 0px 10px 0px 10px;",
-                     tags$div(class="col-sm-8",style="color:whitesmoke;",
+                     tags$div(class="col-sm-8", style="color:whitesmoke;",
                                h3("Influenza Like Illness by County", style="color:whitesmoke;"),
                                box( width = "100%",
                                     myGIOOutput(ns("county_map"), height = "700px")
