@@ -15,7 +15,7 @@ mod_about_ui <- function(id){
              tags$div(class='row', style="margin: 0px 10px 0px 10px;",
                       tags$div(class='col-sm-12',
                                h1("About Us", 
-                                  style="color: white; text-align:center;")
+                                  style="color: white; text-align:center; font-family: 'Roboto Slab', serif;")
                       )
              ),
              tags$div(class='row',style="margin: 0px 10px 0px 10px;",

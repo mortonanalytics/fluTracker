@@ -15,7 +15,7 @@ mod_times_series_ui <- function(id){
              tags$div(class='row', style="margin: 0px 10px 0px 10px;",
                       tags$div(class='col-sm-12',
                                h1("Historical Trends and West Virginia Legistlative History", 
-                                  style="color: white; text-align:center;")
+                                  style="color: white; text-align:center; font-family: 'Roboto Slab', serif;")
                       )
              ),
              tags$div(class="row", style="margin: 0px 10px 0px 10px;",
