@@ -8,20 +8,20 @@
 }
 
 .x-label {
-  fill:whitesmoke;
+  fill:whitesmoke!important;
 }
 
 .y-label {
-  fill:whitesmoke;
+  fill:whitesmoke!important;
 }
 
 .legendElement, .legend-label {
 	font-family:Roboto, sans-serif;
-	color: whitesmoke;
+	color: whitesmoke!important;
 }
 
 .x-grid, .y-grid{
-  stroke: whitesmoke;
+  stroke: whitesmoke!important;
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px)  {
 .nav-btn3 {
