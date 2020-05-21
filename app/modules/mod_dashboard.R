@@ -4,9 +4,9 @@
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
 #'
-#' @noRd 
+#' @noRd
 #'
-#' @importFrom shiny NS tagList 
+#' @importFrom shiny NS tagList
 mod_dashboard_ui <- function(id){
   ns <- NS(id)
   tagList(
@@ -14,14 +14,14 @@ mod_dashboard_ui <- function(id){
              tags$div(class="dashboard-section-divider"),
              tags$div(class='row', style="margin: 0px 10px 0px 10px;",
                       tags$div(class='col-sm-12',
-                               h1("West Virginia Tracker for Influenza Like Illness (ILI)", 
+                               h1("West Virginia Tracker for Influenza Like Illness (ILI)",
                                   style="color: white; text-align:center; font-family: 'Roboto Slab', serif;")
                                )
                       ),
              #### info cards ####
              tags$div(class='row', style="margin: 0px 10px 0px 10px;",
                       tags$div(class='col-sm-4',
-                               tags$div(class="info-card", 
+                               tags$div(class="info-card",
                                         tags$div(class="row", style='background-color: #82A9D0; margin: 0px 0px 0px 0px;',
                                                  h3("What is Influenza Like Illness (ILI)?",
                                                     style="text-align:center;"
@@ -35,7 +35,7 @@ mod_dashboard_ui <- function(id){
                                         )
                                ),
                       tags$div(class='col-sm-4',
-                               tags$div(class="info-card", 
+                               tags$div(class="info-card",
                                  tags$div(class="row", style='background-color: #FF9E01; margin: 0px 0px 0px 00px;',
                                           h3("How is the data collected?",
                                              style="text-align:center;"
@@ -49,7 +49,7 @@ mod_dashboard_ui <- function(id){
                                )
                                ),
                       tags$div(class='col-sm-4',
-                               tags$div(class="info-card", 
+                               tags$div(class="info-card",
                                  tags$div(class="row", style='background-color: #BACFE4; margin: 0px 0px 0px 0px;',
                                           h3("What do we use this data for?",
                                              style="text-align:center;"
@@ -63,7 +63,7 @@ mod_dashboard_ui <- function(id){
                                  )
                                )
                       ),
-             
+
              #### user input and ???? ####
              # tags$div(class='row', style="margin: 0px 10px 0px 10px;",
              #          tags$div(class='col-sm-2',  style="color:whitesmoke;",
@@ -94,13 +94,13 @@ mod_dashboard_ui <- function(id){
              #                   htmlOutput(ns("value_box_change_in_death"))
              #            ),
              #          ),
-             
+
              #### dash exhibits ####
              tags$div(id="dashboard-stats-div", class='row', style="margin: 0px 10px 0px 10px;",
                      tags$div(class="col-sm-8", style="color:whitesmoke;",
                                h3("Influenza Like Illness by County", style="color:whitesmoke;"),
                                box( width = "100%",
-                                    myGIOOutput(ns("county_map"), height = "700px")
+                                    myGIOOutput(ns("county_map"), height = "700px", width = "100%") %>% withSpinner()
                                    )
                      ),
                      tags$div(class="col-sm-4", style="color:whitesmoke;",
@@ -139,91 +139,91 @@ mod_dashboard_ui <- function(id){
 
                               )
                       )
-             
+
              ##### end #####
               )
-             
+
   )
 }
-    
+
 #'dashboard Server Function
 #'
-#' @noRd 
+#' @noRd
 mod_dashboard_server <- function(input, output, session){
   ns <- session$ns
-  
+
   #### parameters ####
   start_date <- reactive({
     format(as.Date(input$essence_dates[1]), "%d%b%Y")
   })
-  
+
   end_date <- reactive({
     format(as.Date(input$essence_dates[2]), "%d%b%Y")
   })
-  
+
   #### update cached data as needed ####
   last_date <- reactive({
     req(end_date())
-    
+
     cached_data <- read.table('./data/essence.txt', sep = "|", stringsAsFactors = FALSE, header = T) %>%
       filter(as.Date(Date, "%m/%d/%Y") <= Sys.Date() )
     cached_data_max_date <- format(max(as.Date(cached_data$Date,"%m/%d/%Y")), "%d%b%Y")
     max_diff <- cached_data_max_date < end_date()
-    
+
     return(max_diff)
-    
+
   })
-  
+
   observeEvent(last_date() == TRUE,{
-    
+
     cached_data <- read.table('./data/essence.txt', sep = "|", stringsAsFactors = FALSE, header = T) %>%
       filter(as.Date(Date, "%m/%d/%Y") <= Sys.Date() )
-    
+
     cached_data_max_date <- format(max(as.Date(cached_data$Date,"%m/%d/%Y")), "%d%b%Y")
-    
+
     update_cached_data(cached_data_max_date, end_date())
-  
+
   })
-  
+
   #### ESSENCE data read in and summarize ####
   essence_data <- reactive({
     req(end_date())
-    
+
     cached_data <- read.table('./data/essence.txt', sep = "|", stringsAsFactors = FALSE, header = T) %>%
       filter(as.Date(Date, "%m/%d/%Y") <= Sys.Date() )
-    
+
     final <- cached_data %>%
         filter( as.Date(Date, "%m/%d/%Y") >= as.Date(start_date(), "%d%b%Y") )
-      
+
     return(final)
-    
+
   })
-  
+
   value_box_values <- reactive({
     process_value_box_data( essence_data() )
   })
-  
+
   map_values <- reactive({
     process_map_data( essence_data() )
   })
-  
+
   vital_statistics <- reactive({
     req(input$vital_stat_grouper)
-    
-    final <- process_summary_data( 
-      df = essence_data(), 
-      category = input$vital_stat_grouper 
+
+    final <- process_summary_data(
+      df = essence_data(),
+      category = input$vital_stat_grouper
       )
 
     return(final)
   })
-  
+
   output$env_check <- renderPrint({
     Sys.getenv("user")
   })
-  
+
   #### value box HTML ####
-  
+
   output$value_box_total_ili <- renderUI({
     tags$div(class="value-card",
              tags$div(class="value-card-header",
@@ -236,7 +236,7 @@ mod_dashboard_server <- function(input, output, session){
                       )
              )
   })
-  
+
   output$value_box_new_ili <- renderUI({
     tags$div(class="value-card",
              tags$div(class="value-card-header",
@@ -249,7 +249,7 @@ mod_dashboard_server <- function(input, output, session){
              )
     )
   })
- 
+
   output$value_box_change_in_ili <- renderUI({
     tags$div(class="value-card",
              tags$div(class="value-card-header",
@@ -262,7 +262,7 @@ mod_dashboard_server <- function(input, output, session){
              )
     )
   })
-  
+
   output$value_box_total_death <- renderUI({
     tags$div(class="value-card",
              tags$div(class="value-card-header",
@@ -275,7 +275,7 @@ mod_dashboard_server <- function(input, output, session){
              )
     )
   })
-  
+
   output$value_box_new_death <- renderUI({
     tags$div(class="value-card",
              tags$div(class="value-card-header",
@@ -288,7 +288,7 @@ mod_dashboard_server <- function(input, output, session){
              )
     )
   })
-  
+
   output$value_box_change_in_death <- renderUI({
     tags$div(class="value-card",
              tags$div(class="value-card-header",
@@ -301,11 +301,11 @@ mod_dashboard_server <- function(input, output, session){
              )
     )
   })
-  
+
   #### map by county ####
-  
+
   addResourcePath("maps", "./maps" )
-  
+
   output$county_map <- renderMyGIO({
     req( map_values() )
 
@@ -324,14 +324,14 @@ mod_dashboard_server <- function(input, output, session){
                           nameFormat = 'text',
                           toolTipFormat = '.0f')
       ) %>%
-      readGeoJSON("./maps/WV_Counties.geojson") 
+      readGeoJSON("./maps/WV_Counties.geojson")
 
   })
-  
+
   #### vital statistics ####
-  
+
   output$vital_stats <- renderMyIO({
-    
+
     myIO::myIO() %>%
       myIO::addIoLayer("bar",
                        label = "ili",
@@ -348,7 +348,7 @@ mod_dashboard_server <- function(input, output, session){
       myIO::setmargin(bottom = 100, right= 75) %>%
       myIO::suppressLegend()
   })
-  
-  
-  
+
+
+
 }

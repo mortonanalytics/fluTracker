@@ -1,5 +1,6 @@
 library(shiny)
 library(shinydashboard)
+library(shinycssloaders)
 library(httr)
 library(jsonlite)
 library(glue)
