@@ -42,7 +42,7 @@ mod_times_series_ui <- function(id){
                                )
                         )
                       ),
-             tags$div(class='row', ,style="margin: 0px 10px 0px 10px;",
+             tags$div(class='row', style="margin: 0px 10px 0px 10px;",
                       tags$div(class="col-sm-6",
                                tags$div(class="info-card", style="min-height: 275px",
                                         tags$div(class="row", style='background-color: #82A9D0; margin: 0px 0px 0px 0px;',
