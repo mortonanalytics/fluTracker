@@ -10,7 +10,7 @@
 mod_dashboard_ui <- function(id){
   ns <- NS(id)
   tagList(
-    tags$div(id="dashboard-charts", class="container-md",
+    tags$div(id="dashboard-charts", class="container-sm",
              tags$div(class="dashboard-section-divider"),
              tags$div(class='row', style="margin: 0px 10px 0px 10px;",
                       tags$div(class='col-sm-12',

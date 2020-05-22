@@ -10,7 +10,7 @@
 mod_times_series_ui <- function(id){
   ns <- NS(id)
   tagList(
-    tags$div(id="times-series-charts", class="container-md", style="background-color: rgb(255,255,255,0.3);",
+    tags$div(id="times-series-charts", class="container-md container-sm", style="background-color: rgb(255,255,255,0.3);",
              tags$div(class="section-divider"),
              tags$div(class='row', style="margin: 0px 10px 0px 10px;",
                       tags$div(class='col-sm-12',
@@ -29,7 +29,21 @@ mod_times_series_ui <- function(id){
                                  tabPanel(title = "West Virginia Trends", 
                                           box(myIO::myIOOutput(ns("ts_wv")), width = "100%")
                                           )
-                               ),
+                               )
+                               
+                               
+                        ),
+                      tags$div(class="col-sm-6 ",
+                               tabsetPanel(type = "pills", 
+                                 tabPanel( 
+                                   title = "West Virginia Legislation",
+                                   DT::dataTableOutput(ns("legislation_tracker"), height = "auto")
+                                   )
+                               )
+                        )
+                      ),
+             tags$div(class='row',
+                      tags$div(class="col-sm-6",
                                tags$div(class="info-card", style="min-height: 275px",
                                         tags$div(class="row", style='background-color: #82A9D0; margin: 0px 0px 0px 0px;',
                                                  h3("Historical Trends",
@@ -43,17 +57,10 @@ mod_times_series_ui <- function(id){
                                                          tags$li("Enrollment in the system has increased over time and there were >3,000 providers enrolled during the 2010-11 season.") 
                                                  )
                                         )
-                               )
-                               
-                        ),
-                      tags$div(class="col-sm-6 ",
-                               tabsetPanel(type = "pills",
-                                 tabPanel(
-                                   title = "West Virginia Legislation",
-                                   DT::dataTableOutput(ns("legislation_tracker"), height = "450px")
-                                   )
+                                )
                                ),
-                               tags$div(class="info-card", style="min-height: 275px",
+                      tags$div(class="col-sm-6",
+                               tags$div(class="info-card", style="min-height: 275px;",
                                         tags$div(class="row", style='background-color: #FF9E01; margin: 0px 0px 0px 00px;',
                                                  h3("Legislative History",
                                                     style="text-align:center;"
@@ -67,11 +74,10 @@ mod_times_series_ui <- function(id){
                                                  )
                                         )
                                ),
-                               
-                        ),
-                      tags$div(style="margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px",
-                               tags$button(class="nav-btn3", "Next Page", onclick="scrollToSection('about-section')")
-                      )
+                               tags$div(style="margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px",
+                                        tags$button(class="nav-btn3", "Next Page", onclick="scrollToSection('about-section')")
+                                )
+                               )
                       )
                     )
              
@@ -145,8 +151,9 @@ mod_times_series_server <- function(input, output, session){
       escape = FALSE, 
       rownames = FALSE,
       options = list(
-        scrollX = TRUE,
-        scrolly = TRUE,
+        scrollX = '600px',
+        scrolly = '350px',
+        scroller = TRUE,
         pageLength = 5,
         dom = 'ftp',
         initComplete = JS(
