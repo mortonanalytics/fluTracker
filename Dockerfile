@@ -14,8 +14,9 @@ RUN R -e "install.packages( c('shiny', 'shinyWidgets', 'htmltools', 'assertthat'
 RUN R -e "install.packages( c('httr', 'glue') )"
 RUN R -e "install.packages( c('DT') )"
 RUN R -e "install.packages( c('jsonlite') )"
-RUN R -e "install.packages( c('shinydashboard') )"
 RUN R -e "install.packages( c('shinycssloaders') )"
+RUN R -e "install.packages( c('shinydashboard') )"
+
 
 RUN Rscript -e 'devtools::install_github("mortonanalytics/myIO", ref="v1.0")'
 
