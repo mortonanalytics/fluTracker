@@ -16,6 +16,10 @@ RUN R -e "install.packages( c('DT') )"
 RUN R -e "install.packages( c('jsonlite') )"
 RUN R -e "install.packages( c('shinydashboard') )"
 RUN R -e "install.packages( c('shinycssloaders') )"
+RUN R -e "install.packages( c('rtweet') )"
+RUN R -e "install.packages( c('tidytext') )"
+RUN R -e "install.packages( c('stringr') )"
+RUN R -e "install.packages( c('lubridate') )"
 RUN Rscript -e 'devtools::install_github("mortonanalytics/myIO", ref="v1.0")'
 RUN Rscript -e 'devtools::install_github("mortonanalytics/myGIO")'
 

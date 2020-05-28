@@ -10,7 +10,7 @@
 mod_times_series_ui <- function(id){
   ns <- NS(id)
   tagList(
-    tags$div(id="times-series-charts", class="container-md container-sm", style="background-color: rgb(255,255,255,0.3);",
+    tags$div(id="times-series-charts", class="container-md container-sm", style="background-color: rgba(255,255,255,0.7);",
              tags$div(class="section-divider"),
              tags$div(class='row', style="margin: 0px 10px 0px 10px;",
                       tags$div(class='col-sm-12',
@@ -75,7 +75,7 @@ mod_times_series_ui <- function(id){
                                         )
                                ),
                                tags$div(style="margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 10px",
-                                        tags$button(class="nav-btn3", "Next Page", onclick="scrollToSection('about-section')")
+                                        tags$button(class="nav-btn3", "Next Page", onclick="scrollToSection('twitter-charts')")
                                 )
                                )
                       )

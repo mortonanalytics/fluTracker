@@ -1,0 +1,40 @@
+.x-label {
+  fill:whitesmoke!important;
+}
+
+.y-label {
+  fill:whitesmoke!important;
+}
+
+.legendElement, .legend-label {
+	font-family:Roboto, sans-serif;
+	color: whitesmoke!important;
+}
+
+.x-grid, .y-grid{
+  stroke: whitesmoke!important;
+}
+@media screen and (min-device-width: 480px)   {
+.nav-btn4 {
+    background-color: rgb(244,173,44);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    width:300px;
+    height: 70px;
+    border-radius: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .nav-btn4 {
+    display:none;
+  }
+}

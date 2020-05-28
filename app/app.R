@@ -5,6 +5,10 @@ library(httr)
 library(jsonlite)
 library(glue)
 library(dplyr)
+library(rtweet)
+library(tidytext)
+library(stringr)
+library(lubridate)
 library(DT)
 library(myIO)
 library(myGIO)
@@ -30,12 +34,14 @@ ui <- fluidPage(
     tags$head(tags$link(href="css/main.css", rel="stylesheet")),
     tags$head(tags$link(href="css/dashboard.css", rel="stylesheet")),
     tags$head(tags$link(href="css/ts.css", rel="stylesheet")),
+    tags$head(tags$link(href="css/twitter.css", rel="stylesheet")),
     #tags$head(tags$link(href="css/fontawesome.css", rel="stylesheet")),
     tags$head(tags$link(href="css/footer.css", rel="stylesheet")),
     tags$div(id="page-container",
       mod_landing_ui("landing_ui_1"),
       mod_dashboard_ui("dashboard"),
       mod_times_series_ui("times_series_ui_1"),
+      mod_twitter_ui("twitter_ui"),
       mod_about_ui("about_ui"),
       mod_footer_ui("footer_ui")
     ),
@@ -53,6 +59,8 @@ server <- function(input, output) {
   callModule(mod_dashboard_server, "dashboard")
 
   callModule(mod_times_series_server, "times_series_ui_1")
+  
+  callModule(mod_twitter_server, "twitter_ui")
 }
 
 # Run the application 
