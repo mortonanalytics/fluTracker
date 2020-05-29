@@ -168,10 +168,9 @@ update_twitter_cache <- function(start_date, end_date){
   max_diff <- cached_data_max_date < end_date
   
   if(min_diff | max_diff){
-    
+    message("get new twitter data")
     #### update cached data ####
     tryCatch({
-      
       rt <- get_twitter_data(start_date, end_date)
   
       df_tweet_combined <- rt %>%
@@ -179,7 +178,7 @@ update_twitter_cache <- function(start_date, end_date){
         distinct(status_id, .keep_all = TRUE)
       
       write.table(df_tweet_combined, './data/tweet_data.txt', sep = "|", row.names = FALSE)
-      print("twitter completed update")
+      message("twitter completed update")
       
     },
     error=function(cond) {
@@ -207,9 +206,8 @@ get_twitter_data <- function(start_date, end_date){
     access_secret = Sys.getenv("access_token_secret"))
   
   #### query elements
-  
-  fromDate <- format(start_date, "%Y%m%d%H%M")
-  toDate <- format(end_date , "%Y%m%d%H%M")
+  fromDate <- format(as.Date(start_date, "%Y-%m-%d"), "%Y%m%d%H%M")
+  toDate <- format(as.Date(end_date, "%Y-%m-%d") , "%Y%m%d%H%M")
   
   query_text <- paste0(c('(fever', 'headache', 'sick', '"respiratory virus"', 'ache', '"stuffy nose"', 'dehydration', 'flu', 'influenza', 'contagious', 'cough)'),
                        collapse = " OR ")
@@ -217,9 +215,8 @@ get_twitter_data <- function(start_date, end_date){
   query_text <- paste0(query_text, "(place:2d83c71ce16cd187)",collapse = " AND ")
   
   #### query ####
-  rt <- search_30day(
+  rt <- search_tweets(
     q = query_text,
-    env_name = "dev",
     n=300,
     fromDate = fromDate,
     toDate = toDate
@@ -233,4 +230,7 @@ get_twitter_data <- function(start_date, end_date){
            week = week(created_at)
     )
   
+  message("twitter query completed")
+  
+  return(rt)
 }

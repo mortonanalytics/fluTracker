@@ -39,7 +39,7 @@ mod_twitter_ui <- function(id){
                       tags$div(class="col-sm-12",
                                tags$div(class="container",
                                         tags$h3(style="color: whitesmoke",
-                                          "Twitter data refelcts Tweets involving ILI keywords and had geographic data to identify the tweet came from West Virgina. There are likely more tweets but their location cannot be verified."
+                                          "Twitter data reflects Tweets involving ILI keywords and had geographic data to identify the tweet came from West Virgina. There are likely more tweets but their location cannot be verified."
                                         )
                                         ),
                                tags$div(style="display: flex; flex-flow: column; align-items: center;",
@@ -86,7 +86,21 @@ mod_twitter_server <- function(input, output, session){
     cached_data_max_date <- format(max(as.Date(cached_data$created_at,"%Y-%m-%d")), "%Y-%m-%d")
     
     update_twitter_cache(cached_data_max_date, format(Sys.Date(), "%Y-%m-%d") )
+    
     message("tweet archive updated")
+    
+    cached_data <- reactive({
+      
+      df_tweet_archive <- read.table("./data/tweet_data.txt", 
+                                     colClasses=c(rep("character", 4),rep("numeric", 2)),
+                                     header = TRUE, 
+                                     stringsAsFactors = FALSE,
+                                     sep = "|")
+      
+      message("tweet archive read in observer")
+      
+      return(df_tweet_archive)
+    })
   })
   
   cached_data <- reactive({

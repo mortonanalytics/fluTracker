@@ -1,13 +1,126 @@
 "status_id"|"created_at"|"user_id"|"text"|"year"|"week"
-"1265457714978861062"|"2020-05-27"|"3027487462"|"I absolutely hate that I can’t fall asleep unless someone is in the bed with me. ESPECIALLY when I have to get up for work at 2AM, Andrew is at work, and Tyler is sick <U+0001F644>"|2020|22
-"1265377032034279425"|"2020-05-26"|"21055711"|"i’m so fucking SICK of white people thinking their lives and their opinions are worth more than anyone else’s. fuck off! fuck off!!!!!!! fuuuccckkk offfffffffffffff"|2020|21
-"1265301902675398660"|"2020-05-26"|"847503139"|"12,000 Americans died because of swine flu, we're now over 100,000 due to your handling of covid, but your base is too dumb to understand that https://t.co/TxSEw4eDmX"|2020|21
-"1264977045928304640"|"2020-05-25"|"787852420122550272"|"@Sky_King61 @LcbrownLora As a Christian, I just want to cry if they think someone that evil is Christ-like, it literally makes me sick to my stomach the comparison!<U+0001F616> https://t.co/mxXhOmZgmo"|2020|21
-"1259997743797407744"|"2020-05-12"|"787852420122550272"|"@DrennenTravis @BuchfromBuck @WVGovernor The media is not the problem, people like you who think there is no problem when people in this very state are dying, our people, #COVID19 is serious, not a \"democratic hoax\" and not a \"glorified flu\" as I have seen so many of our bright citizens refer to it as!!<U+0001F611><U+0001F611> https://t.co/XfmH1CUGCj"|2020|19
-"1264940583002558464"|"2020-05-25"|"823934087912103938"|"How sick are thes people?? https://t.co/i4D9UVqsv6"|2020|21
-"1255684385157906433"|"2020-04-30"|"823934087912103938"|"@realDonaldTrump people are dying!  Americans are dying and all you care about is what’s in it for you. You are a sick bastard!!! https://t.co/UxR944jEOf"|2020|18
+"1266465225798230019"|"2020-05-29"|"3140820459"|"@realDonaldTrump This was nothing but another sick, disgusting display of Trump bashing another country and the W.H.O. to deflect from his pathetic, inexcusable response to the virus and refuses to admit he ignored all the early warnings while stating it was just like the flu and will disappear!"|2020|22
+"1266452683466121224"|"2020-05-29"|"239274808"|"Can all the conservatives go live in Florida or something.. I’m sick of y’all"|2020|22
+"1266427194978570242"|"2020-05-29"|"1049526210412388353"|"Tonight we’re playing #CamelUp from @Zmangames_ Racing camels that are stacked on top of each other seems like a good choice with Megan being sick &amp; everything else going on in the world. Join us at 7pm ET on https://t.co/BWxRYir0XJ 
+
+#loveeachother #staysafe #boardgames https://t.co/VR5plV6kiP"|2020|22
+"1266403447928172554"|"2020-05-29"|"782345727875964933"|"I’m sick and tired of people using conspiracy theories to describe events going on in our nation. It seems like there is an alternative explanation for everything that happens."|2020|22
+"1266389136530976768"|"2020-05-29"|"176896430"|"In <U+0001F1FA><U+0001F1F8>, we glorify good deeds and selfless acts of patriotism, not violence.
+
+Today’s <U+0001F1FA><U+0001F1F8> is sick from the poison that infects the @WhiteHouse and has spread across our nation.
+
+And we’re going to vote like hell in November to win back the White House, heal and save the soul of <U+0001F1FA><U+0001F1F8> https://t.co/j7s8Me8fTP"|2020|22
+"1266357608086200321"|"2020-05-29"|"436640198"|"@LawrenceJones your right that could have been you! This is way outta hand brother
+I think if I was there I'd had to tackle him off Mr. FLOYD! And go to jail.. I know prolly ruin my life but ..my god it's no different than a murder! In front of your face! Makes me Sick!"|2020|22
+"1263792720759439363"|"2020-05-22"|"436640198"|"@dananessel get over yourself! Now it's Sexiest? Maybe an idiot doesn't have to be gender specific! So what? 0.004% Die from this China Flu"|2020|21
+"1266355846348509188"|"2020-05-29"|"49347954"|"I’m sorry, WHAT @realDonaldTrump? This makes me sick to my stomach. The fact that people blindly follow consider him “God” really disturbs me. This is our “president,” though the saddest excuse for one, threatening people to get shot for seeking justice. What the fuck, America? https://t.co/RB7vzGBwsW"|2020|22
+"1266345333593956352"|"2020-05-29"|"1045421120"|"I’m SO sick over all of this. These idiots on the left have guns DISPLAYED on them and nothing happened to them. I’m not anti gun, but I am anti racism. https://t.co/9mrIcEUpv6"|2020|22
+"1266333202442043392"|"2020-05-29"|"327733153"|"@ArthurSchwartz @RealSaavedra Police are sick of Fake News, too, I see!"|2020|22
+"1266248105738924033"|"2020-05-29"|"1638408968"|"I have vocalized this before and I’ll fucking do it again... ANYONE who voted or wil vote for this piece of shit  is no different than he. Voting for him means voting for all his ignorant ass stands for and it fucking makes me sick. #BlackLivesMatter https://t.co/LVhEWGE8lz"|2020|22
+"1266199842566688769"|"2020-05-29"|"2301410783"|"I’m so fucking sick of this whole race war bullshit.   We’re all the fucking same.  All lives fucking matter.  Just smoke some fucking WEED<U+0001F32C>.     thanks."|2020|22
+"1266199476487753728"|"2020-05-29"|"823873992708784130"|"I have applied to 16 jobs and have heard absolutely nothing from any of them. The fact I can't even get a job when I have to pay bills, eat, live somewhere, etc. is so fucking sick."|2020|22
+"1266196304817946624"|"2020-05-29"|"713589728"|"Fucking sick of the internet. Sick of it"|2020|22
+"1266189855282860032"|"2020-05-29"|"2830025560"|"This makes me sick! What kind of justice is this? https://t.co/rGzr0B1Lpg"|2020|22
+"1265455526642700289"|"2020-05-27"|"2830025560"|"@PascoSheriff 
+#9PMRoutine 
+Alittle late but all locked up in WV. Been on the couch feeling like <U+0001F4A9>... A bad thing about the #Covid19 is getting sick and laying around wondering... <U+0001F637><U+0001F912><U+0001F927><U+0001F915><U+0001F975><U+0001F976>"|2020|22
+"1264648468393529344"|"2020-05-24"|"2830025560"|"@AngelineDC @MissingKids @LivePdFantasyLG @LivePDK9 @MuscuttRachel @Michael28710212 @LivePdBlueLine @emily_nestor_ @JamesCraigmyle @SBCSDdgarcia Amen! Too bad we can't have that as a contagious disease..."|2020|21
+"1264619842432311296"|"2020-05-24"|"1046526602908237824"|"@markkirin_ @realDonaldTrump @MiaFarrow She is a sick woman <U+0001F620>"|2020|21
+"1266177221145825282"|"2020-05-29"|"1046526602908237824"|"@DeAnna4Congress @donlemon Liberals are all sick in the head !"|2020|22
+"1265474102917246977"|"2020-05-27"|"1046526602908237824"|"@EmersenLee This goes on everywhere.
+But it's not about race, it's just the mentality of some of the cops.
+I was handcuffed at an out door gathering in my younger years, and was beaten pretty bad .
+A few of my friends were too.
+This video made me physically sick, I  feel so bad for this guy"|2020|22
+"1266153755088691201"|"2020-05-28"|"987865070"|"I think it’s sick and twisted how someone can act like they’re entitled to come in and out of your life whenever they want. Like just do me a favor and stay out of it."|2020|22
+"1266123495286734851"|"2020-05-28"|"375925403"|"When a friend loves you for who you are but still inspires you to be greater, you hang onto them. Friends are contagious. Are you worth catching?"|2020|22
+"1266094034696749059"|"2020-05-28"|"2941139329"|"This is real life SICK . https://t.co/hbyNiBsb3y"|2020|22
+"1266067499612876800"|"2020-05-28"|"2148669153"|"Told em I was gonna be something, that broke shit made me sick, big appetite with a weak stomach!"|2020|22
+"1266037437765165058"|"2020-05-28"|"1076261874264612865"|"@blakesmustache @sandywvu Sick!evil! narcissistic!"|2020|22
+"1266033746437976064"|"2020-05-28"|"2926400097"|"@gaycowboyslut that’s literally sick I’m going to move out"|2020|22
+"1266026543052193794"|"2020-05-28"|"66206748"|"@kylea330 I'm with Amy.. and if it gets too ugly I can always do a write-in ballot just to make a point I'm sick of this BS..
+ This is exactly why many democrats left the party when Hillary Clinton was their favorite whipping girl..."|2020|22
+"1265791773072396288"|"2020-05-27"|"66206748"|"@AshleyTauer I'm sick of this BS... It must be a slow news day ... Why resurrect this old old story I guess there's a great need to beat this Dead Horse"|2020|22
+"1266016637184024577"|"2020-05-28"|"124944787"|"@unstealthy_yeti I've been waiting on the riots from the lockdown.  People are going to get sick of it.  They're going to want to get out and do as usual again.  Probably why they're going to the beaches.  Yeah, I don't know what the answer would be, either.  Beyond my expertise.  <U+0001F61E>"|2020|22
 "1264907199521980422"|"2020-05-25"|"124944787"|"@morningmika We were doing fine til Kung Flu.  Not Trump's fault.  It's all over the world."|2020|21
 "1264906886463328259"|"2020-05-25"|"124944787"|"It's not just in America.  We all know it's cuz the virus and not Trump's fault.  I love how on the news they try to make a big deal about the unemployment numbers and things were fine til Kung Flu hit.  Stupid. https://t.co/USHZQJZfcC"|2020|21
+"1265815692898689024"|"2020-05-28"|"1206770436"|"I’m so sick of seeing this on the tL<U+0001F926><U+0001F3FE><U+200D><U+2642><U+FE0F> https://t.co/bRxfFVV7lm"|2020|22
+"1265815620379082754"|"2020-05-28"|"55662318"|"The Last Of Us Part II came play looks sick as fuckkkkk."|2020|22
+"1263716310560768005"|"2020-05-22"|"772945752"|"Ughh my legs ache. <U+0001F629>"|2020|21
+"1265812576383963145"|"2020-05-28"|"772945752"|"I wish I could go one day without having a headache. <U+0001F915>"|2020|22
+"1265797415627612160"|"2020-05-28"|"2863156886"|"the officer who suffocated George Floyd on VIDEO with WITNESSES is somehow still not in prison and if this doesn’t make you sick to your stomach it’s time to consider that you’re the problem https://t.co/5gBGna3dIk"|2020|22
+"1265775031809986560"|"2020-05-27"|"375080614"|"Someone teach me how to be skinny. I’m so sick of feeling miserable about myself<U+2639><U+FE0F><U+2639><U+FE0F><U+2639><U+FE0F>"|2020|22
+"1265762208086097920"|"2020-05-27"|"865221180604780544"|"I can’t believe they scrubbed the #Spacex launch because of bad weather.  More people die from the flu than launching a rocket into a storm.
+#SpaceXDragon #spacexlaunch"|2020|22
+"1265716236958208002"|"2020-05-27"|"1248094869517631488"|"@BardsFM @headlessinfidel I’m so sick of this movie. I hated theatre in college. I preferred my “get down and dirty” archaeology classes."|2020|22
+"1265664512335609856"|"2020-05-27"|"3308324897"|"My brother is sick with pneumonia and some heart issues. Pray for him, his name is @JamesDu84193621"|2020|22
+"1265657424419196934"|"2020-05-27"|"292737410"|"@zack_paden Of all the antibody tests we’ve done at my hospital only a few (less than 5) have been positive. I went on a cruise and then New York in the beginning of April and got sick right after. I tested negative for covid and antibodies were negative. <U+0001F9D0>"|2020|22
+"1263661732800708609"|"2020-05-22"|"708056279793725441"|"@Againstfalsein1 @dbongino It wasn’t a CNN plan. It is along the lines of the Hong Kong Flu it 68-69...when nothing was shut down and nobody remembers. Media blew this up."|2020|21
+"1265640666673053697"|"2020-05-27"|"708056279793725441"|"@arlalalol @BraxtonsWorld It is a China virus...we still call H1N1 the Spanish Flu. <U+0001F60B>"|2020|22
+"1265536433189773314"|"2020-05-27"|"3968523352"|"This heartburn is making me sick"|2020|22
+"1265531977832312834"|"2020-05-27"|"1063511649573838849"|"I can’t watch these videos. They make me absolutely sick to my stomach. https://t.co/0OFLnjxRLT"|2020|22
+"1265476777079701504"|"2020-05-27"|"521878747"|"I am sickened. She really had the audacity to do this. This hog is sick in the head and the fact that you all give her a platform to pull these kinds of stunts? Wow. https://t.co/87MswhWV1L"|2020|22
+"1265457714978861062"|"2020-05-27"|"3027487462"|"I absolutely hate that I can’t fall asleep unless someone is in the bed with me. ESPECIALLY when I have to get up for work at 2AM, Andrew is at work, and Tyler is sick <U+0001F644>"|2020|22
+"1265450425249128450"|"2020-05-27"|"248917075"|"I’m sick and saddened by this. George Floyd could easily be me John Johnson. How am I supposed to explain how another unarmed black man was murdered by the Police to my kids. #ImSick https://t.co/UMdmampOlF"|2020|22
+"1265103371217899520"|"2020-05-26"|"248917075"|"I’m sick and tired of people celebrities included posting fake apologies after they get caught showing their true colors. A racist is a racist and a fake apology won’t change who you truly are."|2020|21
+"1265419540156035073"|"2020-05-26"|"956719359841456134"|"@TallPaulsLife This makes me sick. I don't give a f&gt;+k what anyone says. Wrong is wrong, and ALL LIVES MATTER. Hold them accountable. I hate evil. I hate assholes. I hate this."|2020|21
+"1265377032034279425"|"2020-05-26"|"21055711"|"i’m so fucking SICK of white people thinking their lives and their opinions are worth more than anyone else’s. fuck off! fuck off!!!!!!! fuuuccckkk offfffffffffffff"|2020|21
+"1265357358194098177"|"2020-05-26"|"868343766"|"@jmcrites53 For many of us, this year has been inconvenience not tragedy.   I mourn for those who have lost people and are sick but many of the complaints I see are more of the “I’m tired of not doing what I want” rather than actual pain, loss, or injury."|2020|21
+"1265348317497774097"|"2020-05-26"|"3048183812"|"@mavericks3333 @jordphillpotts @Dick_Fitzwel1 @darrenrovell @stockx Man you sick. I’m doing good for the economy <U+0001F923>"|2020|21
+"1265326155713982466"|"2020-05-26"|"14416173"|"@Bo_Dirt_ Some people can have a temp that seems abnormal compared to what we consider the standard. Plus the 98.6 is based on extremely outdated, flawed data. So if you generally run cooler, a spike could look normal enough on one reading but actually be a fever."|2020|21
+"1264588424050348032"|"2020-05-24"|"14416173"|"If you’re sick, have kids, have a disability, or A MILLION OTHER FACTORS, online ordering and delivery are an absolute godsend."|2020|21
+"1265305441770385408"|"2020-05-26"|"2738835352"|"Twitter makes me mf sick. For some reason after all these years I still have zero followers on this account, literally see the ugliest people blow up. And they ain’t even good at FinDom. 
+Literally want to delete this shit tbfh. 
+I’m stunning, I’m good at what I do. Explain this?"|2020|21
+"1265301902675398660"|"2020-05-26"|"847503139"|"12,000 Americans died because of swine flu, we're now over 100,000 due to your handling of covid, but your base is too dumb to understand that https://t.co/TxSEw4eDmX"|2020|21
+"1265278758799450112"|"2020-05-26"|"854627519781363712"|"This jawnt sick!! https://t.co/dxZfpmFPy5"|2020|21
+"1265177094125993985"|"2020-05-26"|"833429278725439488"|"@TheRadioLioness @mramogujiofor @hormo_nelson @aluks_dray @emperor_dowells @ifeanyi_nwadike @GideonOnyemuwa @PHCinpictures @Danny_Chukwuma @sellitinPHnow @GarickPLUGs @OB_HEXANE I just read that tweet and was just fuming at his perverted and sick mentality. I cannot tolerate any man denigrates a woman. He is not worth your sweat biko
+
+Well, that's how his page is - talking down on ladies and zooming in on their privates. He is just sick!"|2020|21
+"1265077179311849473"|"2020-05-26"|"50207671"|"I knocked the nest out of the gutter spot it was too high for me to look at it and when I knocked it out and had an egg in it and I've been sick to my stomach ever since I feel so bad that moms will come back in her nest and her are going to be gone I feel miserable"|2020|21
+"1264999941459632129"|"2020-05-25"|"3380975194"|"Urge Better Access to Migraine and Headache Treatments - Sign the Petition! https://t.co/xLtlEwLMc9 via @Change"|2020|21
+"1264977045928304640"|"2020-05-25"|"787852420122550272"|"@Sky_King61 @LcbrownLora As a Christian, I just want to cry if they think someone that evil is Christ-like, it literally makes me sick to my stomach the comparison!<U+0001F616> https://t.co/mxXhOmZgmo"|2020|21
+"1264965131177537536"|"2020-05-25"|"231545255"|"You can’t even listen to simple Quarantine rules... 
+think about how you’d be if the Black Death came back Antibiotic Resistant. 
+
+The healthy were LOCKED UP with the sick.
+They had guards and watchman placed at your door and you were shot if you tried to escape."|2020|21
+"1264882075112521728"|"2020-05-25"|"79389338"|"@morningshowguy @senatemajldr Yes millions out of work when they didn’t need to be , because it was more about politics, they could had isolated the few who are old and sick the same that are normally protected during flue season, yet dem governors use this to destroy life’s of business"|2020|21
+"1264833819816988672"|"2020-05-25"|"79389338"|"@KristySwansonXO I said this before his behavior, was sick and because of his position of power , the parents did nothing about him , and why haven’t those kids been able to speak , or is it they have just not been interviewed !! And using your power to do freakish things is harassment"|2020|21
+"1264777441236705280"|"2020-05-25"|"1178780508559421441"|"When people don’t have respect to President Trump you see how people go free without protecting of Coronavirus because people don’t want more liar by President Trump already confusing doesn’t matter any more of governments only give some money obligations to work sick."|2020|21
+"1264754219627745281"|"2020-05-25"|"1036277726196457474"|"@IceBergTay_Nba I’m sick of the caption <U+0001F602><U+0001F602><U+0001F602>"|2020|21
+"1264752986049347590"|"2020-05-25"|"1892100008"|"@TTULongRun You boutta be sick lol"|2020|21
+"1264369776580866048"|"2020-05-24"|"402692149"|"@StephenPNew @GreatBrianLast Because it made the jeweler sick to look at it. <U+0001F602>"|2020|21
+"1264193859212492800"|"2020-05-23"|"1072566856895090690"|"@fromclicktosale @ChimpSeek @MansiPl @tinrovic @StrengthReason @provok_inc @HIAliving Thanks James!
+
+I'm originally from Wisconsin, currently living in West Virginia.
+
+Got into online business because I'm sick of making someone else rich <U+0001F602>
+
+I played football (American) and ski jumped through high school and baseball through college
+
+@gains_side @PJinvesting"|2020|21
+"1264166869239508995"|"2020-05-23"|"836659563109748737"|"@vv_1BlueLiberal It does sound like you’re being judgmental about their poor choices and cavalier attitudes about their own mortality. Things that get in the way of being part of ‘their’ crowd.
+
+I like crowds that don’t get me sick."|2020|21
+"1264020647430291459"|"2020-05-23"|"885821695294091265"|"@Space_Force1 That was back in my teenage years .. I got sick on it every time until I finally learned my lesson. LOL"|2020|21
+"1264086163792560128"|"2020-05-23"|"885821695294091265"|"@mak1981atoka I hear ya .. I get sick thinking about it as well. That was back in my teen years, the good old days lol .. me and my best friend would sneak down the tracks and drink it .. when we got sick on it, we stopped that real quick. Lol"|2020|21
+"1264015758474051584"|"2020-05-23"|"885821695294091265"|"Nothing like getting sick on the orange jubilee. LOL <U+0001F923><U+0001F923> https://t.co/GVacTD8spE"|2020|21
+"1264016467944759296"|"2020-05-23"|"945749791358771200"|"People are sick. Wishing or getting happy over someone elses bad day or worst moments are not healthy. To pray on someones downfall is wrong. Stop doing it. Pick people up."|2020|21
+"1263999118642380801"|"2020-05-23"|"52438406"|"Spent the whole day being so absolutely furious and heartbroken over decisions made by my university that I gave myself a tension headache does that mean I’m basically a BYU student now?"|2020|21
+"1263965926648614913"|"2020-05-22"|"2468524201"|"Blessed Are the Sick, released 29 years ago today.  I was in the 6th grade and never looked back. https://t.co/M9ps5TbCyT"|2020|21
+"1263882530517921794"|"2020-05-22"|"987357073745829888"|"Rona or no Rona. I’m slapping the shit out of you if you cough on me in general https://t.co/gUD09Xhpum"|2020|21
+"1263668605247422464"|"2020-05-22"|"542137361"|"Idc what anyone says rainbow road on Mario kart makes me motion sick and it’s the worst one"|2020|21
+"1263660488266743810"|"2020-05-22"|"3941891775"|"@camp7185 @Sen_JoeManchin @SenCapito @USAttyStuart @WVGovernor @USAttyPowell My son is in NYC, Manhattan to be exact he self quarantined and 2 weeks later they called a stay at home. He is now going into the 13th week for him and he is done with it. Cuomo and Deblosio have ruined an entire city. But let the prisoners lose so they don't get sick. BS"|2020|21
+"1263580537110671360"|"2020-05-21"|"354413848"|"Must’ve had another low blood sugar moment. Felt sick on my way home from work."|2020|21
+"1263580380336025600"|"2020-05-21"|"349477889"|"@DouglasPhunny @finance_rich @KayyRiv Well, when @KayyRiv asked for receipts to prove this history none were given. Doja has been hot for what? 5-6 months? Is that enough time to say she exclusively dates a certain type? Again my argument is solely off this track until I see how deep the jingle fever runs lol"|2020|21
+"1263562222489518086"|"2020-05-21"|"739699089701535744"|"Really! Dumb and Dumber want recognition for 100K Wu Flu deaths? How about the ONE MILLION babies a year you consent to have slaughtered by Abortion each year? Oh that’s right, you want to try to blame Trump somehow...
+#ProLife #AbortionIsMurder https://t.co/1UcSOVxUvm"|2020|21
+"1263520863003062272"|"2020-05-21"|"1196881672270163968"|"niggasss be sick as tf"|2020|21
+"1263492666555277313"|"2020-05-21"|"792371266279702529"|"I WILL LEGIT CRYYYYYY! I still listen to them daily son. D A I L Y. And don’t let me be going for a long drive <U+0001F602><U+0001F602><U+0001F602>. My husband be SICK of me. https://t.co/vVKUXMTzdS"|2020|21
+"1259997743797407744"|"2020-05-12"|"787852420122550272"|"@DrennenTravis @BuchfromBuck @WVGovernor The media is not the problem, people like you who think there is no problem when people in this very state are dying, our people, #COVID19 is serious, not a \democratic hoax\ and not a \glorified flu\ as I have seen so many of our bright citizens refer to it as!!<U+0001F611><U+0001F611> https://t.co/XfmH1CUGCj"|2020|19
+"1264940583002558464"|"2020-05-25"|"823934087912103938"|"How sick are thes people?? https://t.co/i4D9UVqsv6"|2020|21
+"1255684385157906433"|"2020-04-30"|"823934087912103938"|"@realDonaldTrump people are dying!  Americans are dying and all you care about is what’s in it for you. You are a sick bastard!!! https://t.co/UxR944jEOf"|2020|18
 "1255213688593711105"|"2020-04-28"|"124944787"|"@alansamerica My best friend from school days died of the flu in 2013.  It happens.  Keep your immune system strong, eat healthy, take your multivitamins, keep clean.  About the best you can do with any of it."|2020|17
 "1260681041347477504"|"2020-05-13"|"124944787"|"@LindaMasonJar @Emberr If I have to wear one to get in Wal-Mart and do my grocery shopping I suppose I'd have to but until it's a must I'm not.  If others are worried about getting sick from me, they can wear a mask."|2020|20
 "1260181274611773441"|"2020-05-12"|"124944787"|"I've been up for 25 minutes and already have a headache and we're out of pop and I'm dragging.  <U+0001F623>"|2020|19
@@ -18,44 +131,21 @@
 "1255221182867136512"|"2020-04-28"|"124944787"|"@alansamerica I heard it was .03%...  My friend's regular flu turned into pneumonia that killed her... It's good to be cautious. Not sure I'd feel comfortable sitting in a crowded restaurant at the moment. But, as with myself, I think people can think for themselves as to what they want to do."|2020|17
 "1261768485027418112"|"2020-05-16"|"79389338"|"@KristySwansonXO I have yet to hear of one person that’s got it fir real , I’m thinking these people who died were already sick or weakened immunity from other things and just die from the flue"|2020|20
 "1261282350627016710"|"2020-05-15"|"79389338"|"@Steven_Glickman @johnroberson191 @joncoopertweets @JoeBiden @POTUS How can you blame a man who had zero to do with a virus and tried to stop travel while Democratic Party fought him 1000% all the way at a time when we had no deaths and few sick when it was Obama who kicked out the pharmaceutical and PPG Corp and brag about his moves"|2020|20
-"1264833819816988672"|"2020-05-25"|"79389338"|"@KristySwansonXO I said this before his behavior, was sick and because of his position of power , the parents did nothing about him , and why haven’t those kids been able to speak , or is it they have just not been interviewed !! And using your power to do freakish things is harassment"|2020|21
 "1260529290166382592"|"2020-05-13"|"79389338"|"@KerryKavanaugh @RingPRgirl COMO refused Doctors use of the Malaria drug that needs to be given as soon as possible to get the 80% fast recovery rate with no ventilation!!! All because he wanted to prove his need for ventilators , sick"|2020|20
-"1264882075112521728"|"2020-05-25"|"79389338"|"@morningshowguy @senatemajldr Yes millions out of work when they didn’t need to be , because it was more about politics, they could had isolated the few who are old and sick the same that are normally protected during flue season, yet dem governors use this to destroy life’s of business"|2020|21
 "1260229875430031361"|"2020-05-12"|"79389338"|"@WhiteHouse @DebFerg9 @realDonaldTrump Test is bull shit setting up temp scanner prior to people going into any business or church or school it only way and anybody with s fever then needs tested"|2020|19
 "1260528811587842048"|"2020-05-13"|"79389338"|"@KerryKavanaugh @RingPRgirl We are also curious how many died of other causes not related to covid and were counted as so to make things look worse than they are , we do know NY continued to let flights in from the world after Trumps van, and COMO did not isolate elderly and sick , as well as refused DOC"|2020|20
-"1264777441236705280"|"2020-05-25"|"1178780508559421441"|"When people don’t have respect to President Trump you see how people go free without protecting of Coronavirus because people don’t want more liar by President Trump already confusing doesn’t matter any more of governments only give some money obligations to work sick."|2020|21
 "1260978545045766147"|"2020-05-14"|"1178780508559421441"|"The questions is A mother sand a kid to School that cause to kid sickness of Coronavirus. The Judge ask to mother Why! Sand of kid to School to be sick. Who is responsible for the kid. That is Child abuse. The Judge don’t care about governor or President Trump."|2020|20
-"1264752986049347590"|"2020-05-25"|"1892100008"|"@TTULongRun You boutta be sick lol"|2020|21
 "1255619699464966145"|"2020-04-29"|"1145889792237998080"|"Wonder whatever happened ACHE"|2020|18
 "1264543984321519616"|"2020-05-24"|"1145889792237998080"|"@jeremy_a_hodges I'm sick of it!"|2020|21
 "1255269930716598272"|"2020-04-28"|"1145889792237998080"|"Some where is a turkey with a massive headache... https://t.co/zJ95nNIZmQ"|2020|17
-"1264369776580866048"|"2020-05-24"|"402692149"|"@StephenPNew @GreatBrianLast Because it made the jeweler sick to look at it. <U+0001F602>"|2020|21
 "1264297035689275393"|"2020-05-23"|"3767270301"|"I'm going to run my head into a wall. I'm sick of the lack of communication from people. https://t.co/3oEsgNcdCL"|2020|21
-"1264193859212492800"|"2020-05-23"|"1072566856895090690"|"@fromclicktosale @ChimpSeek @MansiPl @tinrovic @StrengthReason @provok_inc @HIAliving Thanks James!
-
-I'm originally from Wisconsin, currently living in West Virginia.
-
-Got into online business because I'm sick of making someone else rich <U+0001F602>
-
-I played football (American) and ski jumped through high school and baseball through college
-
-@gains_side @PJinvesting"|2020|21
-"1264016467944759296"|"2020-05-23"|"945749791358771200"|"People are sick. Wishing or getting happy over someone elses bad day or worst moments are not healthy. To pray on someones downfall is wrong. Stop doing it. Pick people up."|2020|21
-"1263965926648614913"|"2020-05-22"|"2468524201"|"Blessed Are the Sick, released 29 years ago today.  I was in the 6th grade and never looked back. https://t.co/M9ps5TbCyT"|2020|21
-"1263882530517921794"|"2020-05-22"|"987357073745829888"|"Rona or no Rona. I’m slapping the shit out of you if you cough on me in general https://t.co/gUD09Xhpum"|2020|21
 "1256699855432491011"|"2020-05-02"|"772945752"|"Throbbing headache <U+0001F915>"|2020|18
-"1263716310560768005"|"2020-05-22"|"772945752"|"Ughh my legs ache. <U+0001F629>"|2020|21
-"1263668605247422464"|"2020-05-22"|"542137361"|"Idc what anyone says rainbow road on Mario kart makes me motion sick and it’s the worst one"|2020|21
 "1263614225399910401"|"2020-05-21"|"1220003224897368078"|"You married the sick bastard https://t.co/DdzGylhjAg"|2020|21
 "1254907621372461059"|"2020-04-27"|"1220003224897368078"|"Dream on Jill you should be ashamed of yourself putting your sick husband out in public https://t.co/GanT2d1ifT"|2020|17
 "1257790047643938819"|"2020-05-05"|"1220003224897368078"|"Sick bastard https://t.co/mznlAqO9UY"|2020|18
 "1261832808810508288"|"2020-05-17"|"1220003224897368078"|"He is a sick bastard period https://t.co/2hRZCct33A"|2020|20
 "1261720656397418499"|"2020-05-16"|"1220003224897368078"|"Biden should not be around little kids period he is obviously sick https://t.co/OIVpo9XjaQ"|2020|20
-"1263580537110671360"|"2020-05-21"|"354413848"|"Must’ve had another low blood sugar moment. Felt sick on my way home from work."|2020|21
-"1263562222489518086"|"2020-05-21"|"739699089701535744"|"Really! Dumb and Dumber want recognition for 100K Wu Flu deaths? How about the ONE MILLION babies a year you consent to have slaughtered by Abortion each year? Oh that’s right, you want to try to blame Trump somehow...
-#ProLife #AbortionIsMurder https://t.co/1UcSOVxUvm"|2020|21
 "1262538293377368064"|"2020-05-19"|"792371266279702529"|"Man I know this Resident was sick of my ass today. <U+0001F602><U+0001F602> I had 4 of his patients and they were LIT today."|2020|20
-"1263492666555277313"|"2020-05-21"|"792371266279702529"|"I WILL LEGIT CRYYYYYY! I still listen to them daily son. D A I L Y. And don’t let me be going for a long drive <U+0001F602><U+0001F602><U+0001F602>. My husband be SICK of me. https://t.co/vVKUXMTzdS"|2020|21
 "1256570707590483968"|"2020-05-02"|"783030053097439232"|"Yep, I called it.  I’m so sick of this ridiculous, stupid, criminal administration. https://t.co/4rxNc3z11B"|2020|18
 "1263462349916209153"|"2020-05-21"|"783030053097439232"|"I am sick to death of Drumpf citing China &amp; WHO are to blame, blah blah blah. At this point, it DOESNT MATTER where it came from!  What matters is his apathetic handling of the crisis. Listen! He doesn’t care!
 
@@ -103,7 +193,7 @@ Gimme a break! https://t.co/YkyXtq9eZt"|2020|20
 "1260402160107499520"|"2020-05-13"|"327733153"|"@RepMarkGreen @SpeakerPelosi Shocking!!!  Not!  You all let it happen, then sit back and bitch like babies.  Weak Republican make me sick.  You all are the problem, too."|2020|20
 "1257133487922073601"|"2020-05-04"|"327733153"|"@cin60119002 @HLAurora63 She and her husband are NOT Trump supporters.   No Trump supporter would ask such a STUPID question.  We KNOW we voted for him because of the way he comes back at the media.  We're SICK of the media.  So...the question itself is VERY revealing of a gotcha question.  #Losers"|2020|18
 "1256387252890079232"|"2020-05-02"|"327733153"|"@ChuckCallesto No!!  However...today on Athens was VERY, VERY busy.  So, I believe people are getting sick of it!"|2020|18
-"1259701857422884864"|"2020-05-11"|"327733153"|"@RealMattCouch I was thinking...THANK GOD Walmart and Lowes have those magical barriers at their doorways that prevent anyone from getting sick once they enter.  But...don't stray off the path that are \"clearly\" marked."|2020|19
+"1259701857422884864"|"2020-05-11"|"327733153"|"@RealMattCouch I was thinking...THANK GOD Walmart and Lowes have those magical barriers at their doorways that prevent anyone from getting sick once they enter.  But...don't stray off the path that are \clearly\ marked."|2020|19
 "1257207405043240963"|"2020-05-04"|"327733153"|"@MZHemingway I used to be sad about our media...a long time ago.  Now, I'm sick of them, despise them, and have no use for them."|2020|18
 "1260364499854508035"|"2020-05-13"|"944624417887412224"|"More of the same liberal bull/obstruction, and Americans are getting sick of it!!!<U+0001F624> https://t.co/eEP1xGbQ7r"|2020|20
 "1260361096311050241"|"2020-05-13"|"3298907515"|"i’m SICK AND TIRED of not being able to have guy friends. it honestly freaking sucks"|2020|20
