@@ -135,6 +135,7 @@ mod_twitter_server <- function(input, output, session){
   
   word_frequencies <- reactive({
     remove_reg <- "&amp;|&lt;|&gt;"
+    bad_words <- "fucking"
     
     df_word_frequency <- cached_data() %>% 
       #filter(week(created_at) == max(week(created_at))) %>%
@@ -142,10 +143,12 @@ mod_twitter_server <- function(input, output, session){
       mutate(text = str_remove_all(text, remove_reg)) %>%
       unnest_tokens(word, text, token = "tweets") %>%
       filter(!word %in% stop_words$word,
+             !word %in% bad_words,
              !word %in% str_remove_all(stop_words$word, "'"),
              str_detect(word, "[a-z]")) %>% 
       #group_by(year = year(created_at), week = week(created_at)) %>% 
-      count(word, sort = TRUE) %>% 
+      count(word, sort = TRUE) %>%
+      mutate(word = gsub("[[:punct:]]", "", word)) %>%
       mutate(freq = n/ sum(n)) %>%
       top_n(10, n) %>%
       arrange(n)
