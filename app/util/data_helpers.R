@@ -227,7 +227,8 @@ get_twitter_data <- function(start_date, end_date){
     select(status_id, created_at, user_id, text) %>%
     mutate(created_at = format(created_at, "%Y-%m-%d"),
            year = year(created_at),
-           week = week(created_at)
+           week = week(created_at),
+           text =  gsub('[[:punct:] ]+',' ',text)
     )
   
   message("twitter query completed")
