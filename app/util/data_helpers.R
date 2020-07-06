@@ -3,6 +3,7 @@ get_essence_data <- function(start_date, end_date){
   #start_date <- "01Oct2019"
   
   #end_date <- "19May2020"
+  message("creating ESSENCE query")
   
   date_string <- glue("startDate={start_date}&endDate={end_date}")
   
@@ -22,8 +23,12 @@ get_essence_data <- function(start_date, end_date){
       , "text"
     )
   )
+  
+  message("ESSENCE query results found")
 
   df <- results[[1]]
+  
+  message(nrow(df))
 
   df_ili <- df[grepl("*ILI*", df$Category_flat), ]
 
@@ -31,6 +36,7 @@ get_essence_data <- function(start_date, end_date){
 }
 
 update_cached_data <- function(start_date, end_date){
+  message("update essence")
   
   cached_data <- read.table('./data/essence.txt', sep = "|", stringsAsFactors = FALSE, header = T) %>%
     filter(as.Date(Date, "%m/%d/%Y") <= Sys.Date() )
@@ -39,13 +45,18 @@ update_cached_data <- function(start_date, end_date){
   cached_data_max_date <- format(max(as.Date(cached_data$Date,"%m/%d/%Y")), "%d%b%Y")
   
   #### check if new data is needed ####
-  min_diff <- cached_data_min_date > start_date
-  max_diff <- cached_data_max_date < end_date
+  min_diff <- as.Date(cached_data_min_date, "%d%b%Y") > as.Date(start_date, "%d%b%Y")
+  max_diff <- as.Date(cached_data_max_date, "%d%b%Y") < as.Date(end_date, "%d%b%Y")
+  
+  message(paste0("Max date cached: ", cached_data_max_date))
+  message(paste0("End Date: ", end_date))
   
   if(min_diff | max_diff){
     
     #### update cached data ####
     tryCatch({
+      
+      message("tring ESSENCE API")
       
       df <- get_essence_data(start_date, end_date)
       

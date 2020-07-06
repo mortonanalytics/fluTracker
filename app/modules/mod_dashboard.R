@@ -117,11 +117,7 @@ mod_dashboard_ui <- function(id){
                               # box(width="100%",
                               #     myIOOutput(ns("vital_stats"), height = "250px" )
                               # ),
-                              dateRangeInput(ns("essence_dates"),
-                                             label = "Select Dates for Analysis",
-                                             start = Sys.Date() - 7,
-                                             end = Sys.Date()
-                              ),
+                              htmlOutput(ns("date_picker")),
                               #h3("Tracking Summaries", style="color:whitesmoke;"),
                               htmlOutput(ns("value_box_total_ili")),
                               htmlOutput(ns("value_box_change_in_ili")),
@@ -151,13 +147,24 @@ mod_dashboard_ui <- function(id){
 #' @noRd
 mod_dashboard_server <- function(input, output, session){
   ns <- session$ns
+  
+  #### render date input ####
+  output$date_picker <- renderUI({
+    dateRangeInput(ns("essence_dates"),
+                   label = "Select Dates for Analysis",
+                   start = Sys.Date() - 7,
+                   end = Sys.Date()
+    )
+  })
 
   #### parameters ####
   start_date <- reactive({
+    req(input$essence_dates)
     format(as.Date(input$essence_dates[1]), "%d%b%Y")
   })
 
   end_date <- reactive({
+    req(input$essence_dates)
     format(as.Date(input$essence_dates[2]), "%d%b%Y")
   })
 
