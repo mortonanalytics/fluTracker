@@ -21,7 +21,6 @@ mod_landing_ui <- function(id){
                                                           tags$p(id="hero-title-text", "West Virginia Influenza Like Illness Tracking and Prediction",
                                                                  style="font-family: 'Roboto Slab', serif;"
                                                                  ),
-                                                          tags$p(class="hero-subtitle-text", "A tool for tracking and predicting Influenza Like Illness in West Virginia"),
                                                           br(),
                                                           tags$p(class="hero-subtitle-text2", "Provided by Extra-Corporeal Membrane Oxygenation Program of the West Virginia University Heart and Vascular Institute"),
                                                           tags$br(),
