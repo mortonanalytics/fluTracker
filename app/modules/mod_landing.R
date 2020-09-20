@@ -18,7 +18,7 @@ mod_landing_ui <- function(id){
                                tags$div(class = "row",
                                         tags$div(id = "hero-headline", class = "col-sm-12 col-lg-12",
                                                  tags$div(id="hero-text-box",
-                                                          tags$p(id="hero-title-text", "West Virginia Influenza Like Illness Tracking and Prediction",
+                                                          tags$p(id="hero-title-text", "West Virginia Influenza-like Illness Tracking and Prediction",
                                                                  style="font-family: 'Roboto Slab', serif;"
                                                                  ),
                                                           br(),
