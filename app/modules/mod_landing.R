@@ -22,7 +22,7 @@ mod_landing_ui <- function(id){
                                                                  style="font-family: 'Roboto Slab', serif;"
                                                                  ),
                                                           br(),
-                                                          tags$p(class="hero-subtitle-text2", "Provided by Extra-Corporeal Membrane Oxygenation Program of the West Virginia University Heart and Vascular Institute"),
+                                                          tags$p(class="hero-subtitle-text2", "Provided by the Extra-Corporeal Membrane Oxygenation Program of the West Virginia University Heart and Vascular Institute"),
                                                           tags$br(),
                                                           tags$div(style="position:absolute; bottom: -25px; left: 50%;",
                                                             tags$button(class="nav-btn", "Explore Data", onclick="scrollToSection('dashboard-charts')")

@@ -14,7 +14,7 @@ mod_dashboard_ui <- function(id){
              tags$div(class="dashboard-section-divider"),
              tags$div(class='row', style="margin: 0px 10px 0px 10px;",
                       tags$div(class='col-sm-12',
-                               h1("West Virginia Tracker for Influenza Like Illness (ILI)",
+                               h1("West Virginia Tracker for Influenza-like Illness (ILI)",
                                   style="color: white; text-align:center; font-family: 'Roboto Slab', serif;")
                                )
                       ),
@@ -23,7 +23,7 @@ mod_dashboard_ui <- function(id){
                       tags$div(class='col-sm-4',
                                tags$div(class="info-card",
                                         tags$div(class="row", style='background-color: #82A9D0; margin: 0px 0px 0px 0px;',
-                                                 h3("What is Influenza Like Illness (ILI)?",
+                                                 h3("What is Influenza-like Illness (ILI)?",
                                                     style="text-align:center;"
                                                     )
                                         ),
@@ -56,7 +56,7 @@ mod_dashboard_ui <- function(id){
                                              )
                                  ),
                                  tags$div(class='row',style="margin: 0px 10px 0px 10px;",
-                                          p("The data here is intended to track influenza like illness in West Virginia by county to find and predict influenza like illness outbreaks",
+                                          p("The data here is intended to track Influenza-like illness in West Virginia by county to find and predict Influenza-like illness outbreaks",
                                             style="font-size: 20px"
                                             )
                                  )
@@ -98,7 +98,7 @@ mod_dashboard_ui <- function(id){
              #### dash exhibits ####
              tags$div(id="dashboard-stats-div", class='row', style="margin: 0px 10px 0px 10px;",
                      tags$div(class="col-sm-8", style="color:whitesmoke;",
-                               h3("Influenza Like Illness by County", style="color:whitesmoke;"),
+                               h3("Influenza-like Illness by County", style="color:whitesmoke;"),
                                box( width = "100%",
                                     myGIOOutput(ns("county_map"), height = "700px", width = "100%") %>% withSpinner()
                                    )
@@ -235,7 +235,7 @@ mod_dashboard_server <- function(input, output, session){
     tags$div(class="value-card",
              tags$div(class="value-card-header",
                       tags$p(class="value-card-header-text",
-                      "Total Influenza Like Illness Cases")
+                      "Total Influenza-like Illness Cases")
                       ),
              tags$div(class="value-card-value",
                       tags$p(class="value-card-value-text",
@@ -248,7 +248,7 @@ mod_dashboard_server <- function(input, output, session){
     tags$div(class="value-card",
              tags$div(class="value-card-header",
                       tags$p(class="value-card-header-text",
-                             "New Influenza Like Illness Cases")
+                             "New Influenza-like Illness Cases")
              ),
              tags$div(class="value-card-value",
                       tags$p(class="value-card-value-text",
@@ -261,7 +261,7 @@ mod_dashboard_server <- function(input, output, session){
     tags$div(class="value-card",
              tags$div(class="value-card-header",
                       tags$p(class="value-card-header-text",
-                             "Daily Change in Influenza Like Illness Cases")
+                             "Daily Change in Influenza-like Illness Cases")
              ),
              tags$div(class="value-card-value",
                       tags$p(class="value-card-value-text",
@@ -274,7 +274,7 @@ mod_dashboard_server <- function(input, output, session){
     tags$div(class="value-card",
              tags$div(class="value-card-header",
                       tags$p(class="value-card-header-text",
-                             "Total Influenza Like Illness Deaths")
+                             "Total Influenza-like Illness Deaths")
              ),
              tags$div(class="value-card-value",
                       tags$p(class="value-card-value-text",
@@ -287,7 +287,7 @@ mod_dashboard_server <- function(input, output, session){
     tags$div(class="value-card",
              tags$div(class="value-card-header",
                       tags$p(class="value-card-header-text",
-                             "New Influenza Like Illness Deaths")
+                             "New Influenza-like Illness Deaths")
              ),
              tags$div(class="value-card-value",
                       tags$p(class="value-card-value-text",
@@ -300,7 +300,7 @@ mod_dashboard_server <- function(input, output, session){
     tags$div(class="value-card",
              tags$div(class="value-card-header",
                       tags$p(class="value-card-header-text",
-                             "Daily Change in Influenza Like Illness Deaths")
+                             "Daily Change in Influenza-like Illness Deaths")
              ),
              tags$div(class="value-card-value",
                       tags$p(class="value-card-value-text",

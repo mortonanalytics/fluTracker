@@ -20,14 +20,14 @@ mod_twitter_ui <- function(id){
              ),
              tags$div(class="row", style="margin: 0px 10px 0px 10px;",
                       tags$div(class = "col-sm-6", style="color: whitesmoke",
-                               h3("Influenza Like Illness Twitter Totals by Week", style="color: whitesmoke"),
+                               h3("Influenza-like Illness Twitter Totals by Week", style="color: whitesmoke"),
                                box(
                                  width = "100%",
                                  myIOOutput( ns("tweet_count"), height = "600px" )
                                 )
                                ),
                       tags$div(class = "col-sm-6", style="color: whitesmoke",
-                               h3("Influenza Like Illness Top Word Counts", style="color: whitesmoke"),
+                               h3("Influenza-like Illness Top Word Counts", style="color: whitesmoke"),
                                box(
                                  width = "100%",
                                  myIOOutput( ns("word_count"), height = "600px" )
@@ -135,7 +135,7 @@ mod_twitter_server <- function(input, output, session){
   
   word_frequencies <- reactive({
     remove_reg <- "&amp;|&lt;|&gt;"
-    bad_words <- "fucking"
+    bad_words <- c("fucking", 'https')
     
     df_word_frequency <- cached_data() %>% 
       #filter(week(created_at) == max(week(created_at))) %>%
