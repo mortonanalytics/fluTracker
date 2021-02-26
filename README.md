@@ -1,4 +1,4 @@
 # fluTracker
-Shiny App tracking Influenza Outbreaks in West Virginia
+Shiny App tracking Influenza-like Illness Outbreaks in West Virginia
 
 https://mountainstateflutracker.com/app/
